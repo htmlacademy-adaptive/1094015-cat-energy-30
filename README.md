@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Ksenia Krasnova](https://up.htmlacademy.ru/adaptive/30/user/1094015).
-* Наставник: `Неизвестно`.
+- Студент: [Ksenia Krasnova](https://up.htmlacademy.ru/adaptive/30/user/1094015).
+- Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
 
 ---
 
