@@ -6,6 +6,10 @@
   <title>Cat energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -14,9 +18,16 @@
   <!-- Шапка -->
 
   <header class="header">
-    <a class="header__logo logo" href="#">
-      <img class="logo__image" src="#" width="33" height="38" alt="Изображение логотипа компании на котором размещен улыбающийся кот-супермен.">
-      <img class="logo__text" src="#" width="101" height="18" alt="Изображение на котором прописано название компании: Cat energy.">
+    <a class="header__logo logo" href="index.html">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
+        <img class="logo__image" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Изображение логотипа компании на котором размещен улыбающийся кот-супермен.">
+      </picture>
+      <picture>
+        <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-text-desktop.svg">
+        <img class="logo__text" src="images/logo/logo-text-mobile.svg" width="101" height="18" alt="Изображение на котором прописано название компании: Cat energy.">
+      </picture>
     </a>
     <nav class="nav">
       <button class="nav__toggle" type="button">
@@ -138,7 +149,11 @@
         <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <img class="cooperation__image" src="#" width="320" height="362" alt="Карта на которой обозначено местоположение компании.">
+      <picture>
+        <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/common/map/map-desktop@1x.jpg 1x, images/common/map/map-desktop@2x.jpg 2x">
+        <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/common/map/map-tablet@1x.jpg 1x, images/common/map/map-tablet@2x.jpg 2x">
+        <img class="cooperation__image" src="images/common/map/map-mobile@1x.jpg" srcset="images/common/map/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта на которой обозначено местоположение компании.">
+      </picture>
     </section>
   </main>
 
@@ -146,24 +161,29 @@
 
   <footer class="footer">
     <a class="footer__logo" href="#">
-      <img class="footer__image" src="#" width="128" height="24" alt="Логотип компании Cat energy.">
+      <img class="footer__image" src="images/logo/footer-logo.svg" width="128" height="24" alt="Логотип компании Cat energy.">
     </a>
     <ul class="footer__social social">
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
-        <span class="visually-hidden">Мы в Вконтакте</span>
+        <a class="social__link social__link--vkontakte" href="#">
+          <span class="visually-hidden">Мы в Вконтакте</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="#">Мы в Ютубе</a>
-        <span class="visually-hidden">Мы в Ютубе</span>
+        <a class="social__link social__link--youtube" href="#">
+          <span class="visually-hidden">Мы в Ютубе</span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--telegram" href="#">Мы в Телеграме</a>
-        <span class="visually-hidden">Мы в Телеграме</span>
+        <a class="social__link social__link--telegram" href="#">
+          <span class="visually-hidden">Мы в Телеграме</span>
+        </a>
       </li>
     </ul>
     <div class="footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="copyright__text">HTML Academy</p>
+      </a>
     </div>
   </footer>
 </body>
