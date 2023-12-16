@@ -1,1 +1,8 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее*/
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Lato", sans-serif;
+  color: $base-color-text;
+}

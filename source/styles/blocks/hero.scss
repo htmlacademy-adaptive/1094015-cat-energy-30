@@ -1,0 +1,30 @@
+.hero__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: $bg-basic-white;
+
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.hero__subtitle {
+  line-height: 14px;
+  font-family: "Oswald", sans-serif;
+  color: $bg-basic-white;
+  text-transform: uppercase;
+
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.hero__link {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: $bg-basic-white;
+  text-transform: uppercase;
+
+  background: $bg-basic-green;
+}
