@@ -1,0 +1,43 @@
+.example {
+  background-color: $bg-light-gray;
+}
+
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: $base-color-title;
+}
+
+.example__key {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: var(--special_dark-grey, #444444);
+}
+
+.example__value {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: $base-color-title;
+}
+
+.example__price-title {
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: $base-color-title;
+  text-transform: uppercase;
+}
+
+.example__price-description {
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: $base-color-title;
+  text-transform: uppercase;
+}

@@ -1,0 +1,20 @@
+.card__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  color: $additional-color-title-two;
+  text-transform: uppercase;
+}
+
+.card__parameter {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.card__text {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
