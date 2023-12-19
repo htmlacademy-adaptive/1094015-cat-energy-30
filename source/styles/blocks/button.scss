@@ -1,1 +1,15 @@
-// Пустой комментарий
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: $bg-basic-white;
+  text-transform: uppercase;
+
+  background: $bg-basic-green;
+}
+
+.button--version {
+  color: $base-color-text;
+  background-color: $bg-light-gray;
+}

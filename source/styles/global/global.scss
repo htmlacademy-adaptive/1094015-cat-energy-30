@@ -5,4 +5,11 @@ body {
   line-height: 18px;
   font-family: "Lato", sans-serif;
   color: $base-color-text;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain1;
 }
