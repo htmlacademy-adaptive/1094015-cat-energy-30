@@ -1,1 +1,66 @@
-// Пустой комментарий
+.copyright__link {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.copyright__link::before {
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../images/icons/logo.svg#logo");
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  mask-repeat: no-repeat;
+  background-color: $bg-special-gray;
+  display: block;
+}
+
+.copyright__link:hover::before {
+  background-color: $bg-basic-green;
+}
+
+.copyright__link:focus::before {
+  background-color: $bg-basic-green;
+}
+
+.copyright__link:active::before {
+  background-color: $bg-basic-green;
+  opacity: 0.3;
+}
+
+.copyright__text {
+  color: $base-color-text;
+}
+
+.copyright__text:hover {
+  color: $base-color-text;
+}
+
+.copyright__text:focus {
+  color: $base-color-text;
+}
+
+.copyright__text:active {
+  color: $base-color-text;
+  opacity: 0.3;
+}
+
+.copyright__image {
+  fill: $bg-special-gray;
+}
+
+.copyright__image:hover {
+  fill: $bg-special-gray;
+}
+
+.copyright__image:focus {
+  fill: $bg-basic-green;
+}
+
+.copyright__image:active {
+  fill: $bg-basic-green;
+  opacity: 0.3;
+}

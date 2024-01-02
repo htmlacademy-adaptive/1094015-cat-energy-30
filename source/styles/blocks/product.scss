@@ -1,19 +1,41 @@
+.product__link {
+  text-decoration: none;
+}
+
 .product__title {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   font-family: "Oswald", sans-serif;
   color: $additional-color-title-two;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 13px;
+}
+
+.product__list {
+  padding: 0;
+}
+
+.product__item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product__parameter {
   line-height: 14px;
-  text-align: center;
+  text-align: left;
+  display: block;
+  margin-bottom: 15px;
 }
 
-.product__text{
+.product__text {
   line-height: 14px;
   text-align: right;
+}
+
+.product__button {
+  padding: 10px 109px;
 }

@@ -1,1 +1,43 @@
-// Пустой комментарий
+.social__link {
+  position: relative;
+}
+
+.social__link:hover::before {
+  background-color: $bg-basic-green;
+}
+
+.social__link:focus::before {
+  background-color: $bg-basic-green;
+}
+
+.social__link:active::before {
+  background-color: $bg-basic-green;
+  opacity: 0.3;
+}
+
+.social__link::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  mask-repeat: no-repeat;
+  background-color: $bg-special-gray;
+  display: block;
+}
+
+.social__link--vkontakte::before {
+  width: 28px;
+  height: 22px;
+  mask-image: url("../../images/icons/vkontakte.svg#vkontakte");
+}
+
+.social__link--youtube::before {
+  width: 28px;
+  height: 22px;
+  mask-image: url("../../images/icons/youtube.svg#youtube");
+}
+
+.social__link--telegram::before {
+  width: 28px;
+  height: 22px;
+  mask-image: url("../../images/icons/telegram.svg#telegram");
+}

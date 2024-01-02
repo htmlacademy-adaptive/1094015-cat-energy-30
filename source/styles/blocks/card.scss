@@ -1,3 +1,17 @@
+.card__container {
+  display: flex;
+  height: 107px;
+  padding-bottom: 17px;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__image {
+  padding: 11px 36px;
+}
+
 .card__title {
   font-weight: 400;
   font-size: 16px;
@@ -5,6 +19,19 @@
   font-family: "Oswald", sans-serif;
   color: $additional-color-title-two;
   text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 14px;
+}
+
+.card__item {
+  padding: 0;
+  list-style: none;
+}
+
+.card__list {
+  justify-content: space-between;
+  display: flex;
+  width: 140px;
 }
 
 .card__parameter {
@@ -17,4 +44,8 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+}
+
+.card__button {
+  padding: 10px 109px;
 }

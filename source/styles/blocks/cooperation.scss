@@ -1,6 +1,16 @@
+.cooperation {
+  height: 474px;
+}
+
 .cooperation--version {
   background-color: $bg-light-gray;
 }
+
+.cooperation__information {
+  display: flex;
+  padding: 26px 20px 26px 20px;
+}
+
 .cooperation__title {
   font-weight: 400;
   font-size: 16px;
@@ -8,8 +18,10 @@
   font-family: "Oswald", sans-serif;
   color: $additional-color-title;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .cooperation__address {
   line-height: 20px;
+  margin: 0;
 }

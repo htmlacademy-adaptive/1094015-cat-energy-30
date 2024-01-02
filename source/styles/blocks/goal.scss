@@ -1,3 +1,11 @@
+.goal__item {
+  padding-bottom: 19px;
+}
+
+.goal__item:last-child {
+  padding-bottom: 0;
+}
+
 .goal__label-text {
   font-weight: 400;
   font-size: 16px;

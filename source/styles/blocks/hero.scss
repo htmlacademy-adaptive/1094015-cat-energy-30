@@ -1,3 +1,16 @@
+.hero {
+  background-image: url("../../images/index/background/index-background-mobile@1x.jpg");
+  background-size: 100% 302px, 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 472px;
+  color: $bg-basic-white;
+  text-align: center;
+  padding: 0 0 10px 0;
+  margin-bottom: 20px;
+}
+
 .hero__title {
   font-weight: 400;
   font-size: 36px;
@@ -5,8 +18,8 @@
   font-family: "Oswald", sans-serif;
   text-align: center;
   color: $bg-basic-white;
-
-  background-color: rgba(104, 183, 56, 0.85);
+  padding: 27px 35px 25px 36px;
+  margin: 0;
 }
 
 .hero__subtitle {
@@ -14,7 +27,21 @@
   font-family: "Oswald", sans-serif;
   color: $bg-basic-white;
   text-transform: uppercase;
-
-  background-color: rgba(104, 183, 56, 0.85);
+  margin: 0;
+  padding-bottom: 29px;
 }
 
+.hero__picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__image {
+  width: 280px;
+  height: 270px;
+}
+
+.hero__link {
+  padding: 10px 64px;
+}

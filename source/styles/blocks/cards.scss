@@ -1,1 +1,11 @@
-// Пустой комментарий
+.cards {
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  padding: 20px 20px 25px 20px;
+  list-style: none;
+  height: 157px;
+  border-bottom: 1px solid $bg-dark-gray;
+}
