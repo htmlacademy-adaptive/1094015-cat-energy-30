@@ -1,3 +1,30 @@
 .footer {
   background-color: $bg-light-gray;
+  padding-top: 40px;
+}
+
+.footer__logo {
+  padding: 0 96px;
+}
+.footer__image {
+  padding-bottom: 20px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  border-top: 1px solid $bg-dark-gray;
+  border-bottom: 1px solid $bg-dark-gray;
+  column-gap: 24px;
+}
+
+.footer__copyright {
+  padding: 20px 20px 40px 20px;
 }

@@ -1,1 +1,14 @@
-// Пустой комментарий
+.goods {
+  margin: 0;
+  padding: 0;
+}
+
+.goods__item {
+  border-top: 1px solid #d9d9d9;
+  padding: 13px 20px 19px 20px;
+  list-style: none;
+}
+
+.goods__item:last-child {
+  border-bottom: 1px solid #d9d9d9;
+}

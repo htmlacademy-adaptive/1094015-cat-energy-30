@@ -1,1 +1,38 @@
-// Пустой комментарий
+.copyright__link {
+ text-decoration: none;
+ display: flex;
+justify-content: space-between;
+}
+.copyright__text {
+  color: $base-color-text;
+}
+
+.copyright__text:hover {
+  color: $base-color-text;
+}
+
+.copyright__text:focus {
+  color: $base-color-text;
+}
+
+.copyright__text:active  {
+  color: $base-color-text;
+  opacity: 0.3;
+}
+
+.copyright__image {
+  fill: $bg-special-gray;
+}
+
+.copyright__image:hover {
+  fill: $bg-special-gray;
+}
+
+.copyright__image:focus {
+  fill: $bg-basic-green;
+}
+
+.copyright__image:active {
+  fill: $bg-basic-green;
+  opacity: 0.3;
+}

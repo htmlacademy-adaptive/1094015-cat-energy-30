@@ -6,11 +6,18 @@
   color: $additional-color-title;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding: 58px 0 8px 0;
 }
 
 .more__description {
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+  margin: 0;
+  padding-bottom: 21px;
 }
 
+.more__button {
+  padding: 10px 95px;
+}

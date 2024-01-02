@@ -1,7 +1,28 @@
+.form__filter-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__group {
+  padding: 0 20px 14px 20px;
+  height: 45px;
+  width: 280px;
+  display: flex;
+  gap: 13px;
+  list-style: none;
+}
+
+.form__group:last-child {
+  padding: 0 20px 24px 20px;
+}
+
 .form__label {
   font-size: 16px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  padding-top: 13px;
+
 }
 
 .form__input {
@@ -10,6 +31,19 @@
   font-family: "Oswald", sans-serif;
   color: $base-color-text;
   text-transform: uppercase;
+  height: 18px;
+  width: 228px;
+  padding: 0;
+  border: 1px solid $bg-border-gray;
+  padding-top: 14px ;
+  padding-left: 15px;
+  padding-bottom: 13px;
+}
+
+.form__filter {
+  list-style: none;
+  margin: 0;
+  padding: 22px 20px 19px 20px;
 }
 
 .form__information {
@@ -17,10 +51,37 @@
   line-height: 26px;
   font-family: "Oswald", sans-serif;
   color: $base-color-title;
+  margin: 0;
+}
+
+.form__information--contacts {
+  padding: 26px 113px 35px 20px;
+}
+
+.form__information--comments {
+  padding: 0 179px 38px 20px;
+}
+
+.form__information--additionally {
+  padding: 0 0 34px 20px;
 }
 
 .form__text {
   line-height: 16px;
   text-align: center;
   color: $base-color-title;
+}
+
+.form__button {
+  padding: 10px 20px 32px 20px;
+}
+
+.form__button__send {
+  padding: 10px 78px;
+  border: none;
+  margin-bottom: 21px;
+}
+
+.form__text {
+  padding-left: 64px;
 }

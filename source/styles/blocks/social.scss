@@ -1,1 +1,16 @@
-// Пустой комментарий
+.social__link {
+  color: $bg-special-gray;
+}
+.social__link:hover {
+  color: $bg-basic-green;
+}
+
+.social__link:focus {
+  color: $bg-basic-green;
+}
+
+.social__link:active {
+  color: $bg-basic-green;
+  opacity: 0.3;
+}
+
