@@ -1,8 +1,38 @@
 .copyright__link {
- text-decoration: none;
- display: flex;
-justify-content: space-between;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
+
+.copyright__link::before {
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../images/icons/logo.svg#logo");
+  -webkit-mask-image: url("../../images/icons/logo.svg#logo");
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background-color: $bg-special-gray;
+  display: block;
+}
+
+.copyright__link:hover::before {
+  background-color: $bg-basic-green;
+}
+
+.copyright__link:focus::before {
+  background-color: $bg-basic-green;
+}
+
+.copyright__link:active::before {
+  background-color: $bg-basic-green;
+  opacity: 0.3;
+}
+
 .copyright__text {
   color: $base-color-text;
 }
