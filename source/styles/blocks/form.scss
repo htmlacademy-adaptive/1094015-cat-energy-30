@@ -22,7 +22,6 @@
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   padding-top: 13px;
-
 }
 
 .form__input {
@@ -35,9 +34,7 @@
   width: 228px;
   padding: 0;
   border: 1px solid $bg-border-gray;
-  padding-top: 14px ;
-  padding-left: 15px;
-  padding-bottom: 13px;
+  padding: 14px 0 13px 15px;
 }
 
 .form__filter {
@@ -70,6 +67,7 @@
   line-height: 16px;
   text-align: center;
   color: $base-color-title;
+  padding-left: 64px;
 }
 
 .form__button {
@@ -80,8 +78,4 @@
   padding: 10px 78px;
   border: none;
   margin-bottom: 21px;
-}
-
-.form__text {
-  padding-left: 64px;
 }
