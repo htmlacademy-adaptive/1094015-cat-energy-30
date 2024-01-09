@@ -1,4 +1,6 @@
 /* здесь используйте глобальные переменные */
+// Colors
+
 $base-color-text: #444444;
 $base-color-title: #000000;
 $additional-color-title: #111111;
@@ -11,3 +13,8 @@ $bg-special-gray: #666666;
 $bg-basic-white: #ffffff;
 $bg-border-gray: #e7e7e7;
 $bg-border-special-gray: #cdcdcd;
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1440px;

@@ -1,1 +1,57 @@
-// Пустой комментарий
+// .header {
+//   flex-direction: column;
+//   display: flex;
+//   height: 264px;
+//   margin: 0 auto;
+//   width: 320px;
+// }
+
+// @media (min-width: $tablet-width) {
+//   .header {
+//     height: 50px;
+//     width: 704px;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .header {
+//     height: 59px;
+//     width: 1220px;
+//   }
+// }
+
+.header__container {
+  margin: 0 auto;
+  min-width: 280px;
+  max-width: 1300px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .header__container {
+    display: flex;
+    align-items: center;
+    padding: 25px 34px 65px 30px;
+    width: 704px;
+    margin: 0;
+  }
+}
+
+// @media (min-width: $desktop-width) {
+//   .header__container {
+//     padding: 55px 0 29px 0;
+//   }
+// }
+
+.header__logo {
+  padding: 13px 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .header__logo {
+    padding: 0;
+  }
+}

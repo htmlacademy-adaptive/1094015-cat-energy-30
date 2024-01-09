@@ -1,1 +1,62 @@
-// Пустой комментарий
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    width: 530px;
+  }
+}
+
+.nav__toggle {
+  padding: 0;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav__toggle {
+    display: none;
+  }
+}
+
+.nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 2px;
+  background-color: $base-color-title;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 2px;
+  background-color: $base-color-title;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

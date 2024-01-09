@@ -2,6 +2,15 @@
   background-color: $bg-light-gray;
   position: relative;
   margin: 0 20px 0 20px;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .functions__block {
+    width: 593px;
+    padding: 77px 63px 57px 52px;
+    margin: 0 30px 30px 30px;
+  }
 }
 
 .functions__block::before {
@@ -15,30 +24,70 @@
   background-color: #68b738;
 }
 
+@media (min-width: $tablet-width) {
+  .functions__block::before {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: 445px;
+  }
+}
+
 .functions__block::after {
   content: "";
   position: absolute;
-  top: 19px;
-  left: 12px;
   width: 68px;
   height: 50px;
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .functions__block::after {
+    width: 268px;
+    height: 194px;
+  }
 }
 
 .functions__block--slim::after {
   background-image: url("../../images/icons/cat.svg#cat");
   background-size: 36px 50px;
   background-position: center top;
+  top: 9px;
+  left: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .functions__block--slim::after {
+    background-size: 140px 194px;
+    top: 81px;
+    left: 412px;
+  }
 }
 
 .functions__block--slim {
   margin-bottom: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .functions__block--slim {
+    margin-bottom: 30px;
+  }
+}
+
 .functions__block--weight::after {
   background-image: url("../../images/icons/panther.svg#panther");
   background-size: 67px 28px;
   background-position: center top;
+  top: 35px;
+  left: 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .functions__block--weight::after {
+    background-size: 268px 112px;
+    top: 135px;
+    left: 411px;
+  }
 }
 
 .functions__title {
@@ -52,9 +101,28 @@
   padding: 30px 80px 29px 90px;
 }
 
+@media (min-width: $tablet-width) {
+  .functions__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 0 24px 0;
+    color: $base-color-title;
+  }
+}
+
 .functions__description {
   margin: 0;
   padding: 0 33px 38px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .functions__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    padding: 0 0 48px 0;
+    color: $base-color-title;
+  }
 }
 
 .functions__link {
@@ -72,4 +140,15 @@
   display: flex;
   padding-left: 20px;
   padding-bottom: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .functions__link {
+    font-size: 20px;
+    line-height: 29px;
+    text-decoration: none;
+    padding: 0;
+    width: 165px;
+    background-position: 133px center;
+  }
 }

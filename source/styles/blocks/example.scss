@@ -1,6 +1,23 @@
 .example {
   background-color: $bg-light-gray;
   padding: 25px 20px 40px 20px;
+  width: 280px;
+}
+
+@media (min-width: 768px) {
+  .example {
+    width: 768px;
+    background-color: $bg-basic-white;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .example__text {
+    padding: 45px 30px 0 30px;
+    width: 708px;
+    padding-bottom: 99px;
+  }
 }
 
 .example__title {
@@ -14,20 +31,98 @@
   padding-bottom: 40px;
 }
 
+@media (min-width: 768px) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .example__description {
   margin: 0;
   padding-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 55px;
+  }
+}
+
+@media (min-width: 768px) {
+  .example__stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 708px;
+  }
+}
+
 .example__params {
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 34px;
+}
+
+.example__params-item {
+  position: relative;
+  box-sizing: border-box;
+  padding: 15px 5px;
+  width: 124px;
+  min-height: 24px;
+  border: 1px solid $bg-border-special-gray;
+  border-radius: 3px;
+}
+
+@media (min-width: 768px) {
+  .example__params-item {
+    padding: 15px 30px 11px 30px;
+    width: 164px;
+    height: 63px;
+    margin-right: 43px;
+  }
 }
 
 .example__key {
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  color: var(--special_dark-grey, #444444);
+  color: $base-color-text;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(72%);
+}
+
+.example__key-text {
+  display: inline-flex;
+  max-width: 70%;
+  background-color: $bg-light-gray;
+}
+
+@media (min-width: 768px) {
+  .example__key-text {
+    background-color: $bg-basic-white;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.example__key-text::before {
+  margin-right: 10px;
+  content: "";
+}
+
+.example__key-text::after {
+  margin-left: 10px;
+  content: "";
 }
 
 .example__value {
@@ -39,18 +134,39 @@
   margin: 0;
 }
 
-.example__price-title {
-  line-height: 20px;
-  font-family: "Oswald", sans-serif;
-  text-align: center;
-  color: $base-color-title;
-  text-transform: uppercase;
+@media (min-width: 768px) {
+  .example__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
-.example__price-description {
+.example__price {
   line-height: 20px;
   font-family: "Oswald", sans-serif;
   text-align: center;
   color: $base-color-title;
   text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .example__price {
+    font-size: 20px;
+    width: 174px;
+    text-align: right;
+  }
+}
+
+.example__slider {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .example__slider {
+    background: linear-gradient(to bottom, $bg-basic-white 151px, $bg-basic-gray 151px 384px);
+    width: 100%;
+  }
 }

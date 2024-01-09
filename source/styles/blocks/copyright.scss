@@ -5,6 +5,12 @@
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .copyright__link {
+    width: 168px;
+  }
+}
+
 .copyright__link::before {
   width: 27px;
   height: 34px;
@@ -16,6 +22,12 @@
   mask-repeat: no-repeat;
   background-color: $bg-special-gray;
   display: block;
+}
+
+@media (min-width: 768px) {
+  .copyright__link::before {
+    top: 6px;
+  }
 }
 
 .copyright__link:hover::before {

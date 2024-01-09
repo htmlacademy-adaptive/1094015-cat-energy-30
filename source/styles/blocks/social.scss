@@ -27,17 +27,20 @@
 .social__link--vkontakte::before {
   width: 28px;
   height: 22px;
+  left: -20px;
   mask-image: url("../../images/icons/vkontakte.svg#vkontakte");
 }
 
 .social__link--youtube::before {
   width: 28px;
   height: 22px;
+  left: 7px;
   mask-image: url("../../images/icons/youtube.svg#youtube");
 }
 
 .social__link--telegram::before {
   width: 28px;
   height: 22px;
+  left: 35px;
   mask-image: url("../../images/icons/telegram.svg#telegram");
 }

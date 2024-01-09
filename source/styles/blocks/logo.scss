@@ -1,1 +1,31 @@
-// Пустой комментарий
+.logo__image {
+  padding-right: 56px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    padding-right: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__image {
+    padding-right: 14px;
+  }
+}
+
+.logo__text {
+  padding-right: 72px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__text {
+    padding-right: 94px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__text {
+    padding-right: 543px;
+  }
+}
