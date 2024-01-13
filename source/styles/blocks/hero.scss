@@ -25,9 +25,45 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .hero {
+    width: 966px;
+    padding-left: 190px;
+    padding-right: 0;
+    margin: 0;
+    position: unset;
+    padding-bottom: 134px;
+    height: 499px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 694px;
+    z-index: -2;
+    background-image: url("../../images/index/background/index-background-desktop@1x.jpg");
+    background-size: cover;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .hero__wrapper {
     display: grid;
+    height: 810px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__content {
+    width: 414px;
+    grid-row-start: 1;
+    grid-column-start: 1;
   }
 }
 
@@ -56,6 +92,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .hero__title {
+    padding: 81px 0 40px 0;
+  }
+}
+
 .hero__subtitle {
   line-height: 14px;
   font-family: "Oswald", sans-serif;
@@ -76,6 +118,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .hero__subtitle {
+    padding: 0 0 52px 0;
+  }
+}
+
 .hero__picture {
   display: block;
   margin-left: auto;
@@ -90,6 +138,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .hero__picture {
+    grid-row-start: 1;
+    grid-column: none;
+  }
+}
+
 .hero__image {
   width: 280px;
   height: 270px;
@@ -99,6 +154,13 @@
   .hero__image {
     width: 709px;
     height: 609px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__image {
+    width: 552px;
+    height: 499px;
   }
 }
 
@@ -118,5 +180,13 @@
     width: 192px;
     font-size: 20px;
     line-height: 26px;
+    height: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__link {
+    margin: 0;
+    grid-row-start: 2;
   }
 }

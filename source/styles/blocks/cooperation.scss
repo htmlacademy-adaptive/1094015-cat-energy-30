@@ -2,9 +2,16 @@
   height: 474px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .cooperation {
     height: 600px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation {
+    height: 400px;
+    position: relative;
   }
 }
 
@@ -17,10 +24,22 @@
   padding: 26px 20px 26px 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .cooperation__information {
     padding: 60px 70px;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation__information {
+    padding: 60px 78px 60px 80px;
+    position: absolute;
+    z-index: 1;
+    background-color: $bg-basic-white;
+    top: 95px;
+    left: 110px;
+    gap: 87px;
   }
 }
 
@@ -34,7 +53,7 @@
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .cooperation__title {
     font-size: 20px;
     line-height: 26px;
@@ -47,14 +66,14 @@
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .cooperation__address {
     font-size: 16px;
     width: 157px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .cooperation__address span {
     display: block;
     padding-top: 20px;
