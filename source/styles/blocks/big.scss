@@ -1,3 +1,38 @@
 .big {
   padding: 4px 28px;
 }
+
+@media (min-width: $tablet-width) {
+  .big {
+    padding-top: 0;
+    padding-left: 79px;
+    padding-bottom: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .big {
+    padding-top: 6px;
+    padding-left: 37px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .big--fish {
+    padding-top: 5px;
+    padding-bottom: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .big--fish {
+    padding-bottom: 13px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .big--buckwheat {
+    padding-top: 9px;
+  }
+}

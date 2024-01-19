@@ -5,9 +5,15 @@
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .copyright__link {
     width: 168px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    width: 163px;
   }
 }
 
@@ -24,9 +30,17 @@
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .copyright__link::before {
-    top: 6px;
+    top: 8px;
+    right: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link::before {
+    top: 8px;
+    right: 0;
   }
 }
 
@@ -45,6 +59,13 @@
 
 .copyright__text {
   color: $base-color-text;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .copyright__text:hover {

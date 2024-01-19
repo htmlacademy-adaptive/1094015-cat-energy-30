@@ -71,7 +71,13 @@
 @media (min-width: $tablet-width) {
   .slider__toggle::before {
     height: 512px;
-    left: 384px;
+    left: 382px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__toggle::before {
+    left: 277px;
   }
 }
 
@@ -89,7 +95,14 @@
 
 @media (min-width: $tablet-width) {
   .slider__toggle::after {
-    top: 236px;
-    left: 366px;
+    top: 238px;
+    left: 363px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__toggle::after {
+    top: 239px;
+    left: 260px;
   }
 }

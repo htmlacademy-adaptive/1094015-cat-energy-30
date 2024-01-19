@@ -5,8 +5,91 @@
   height: 157px;
 }
 
+@media (min-width: $tablet-width) {
+  .group {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    width: 628px;
+    height: 131px;
+    margin: 0 0 34px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .group {
+    display: flex;
+    margin: 0 0 58px 0;
+    width: 1125px;
+    height: 42px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .group:last-child {
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .group__item--sweetener {
+    margin-right: 45px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .group__item--water {
+    margin-right: 77px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .group__item--milk {
+    margin-right: 139px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .group__label {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .group__input--check {
+    position: relative;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid $bg-border-special-gray;
+    cursor: pointer;
+    appearance: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .group__input--check:checked {
+    background-image: url("../../images/icons/tick.svg#tick");
+    background-size: 24px 19px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
 .group__label-text {
   font-size: 16px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .group__label-text {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }

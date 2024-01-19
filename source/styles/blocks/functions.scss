@@ -19,7 +19,7 @@
 @media (min-width: $tablet-width) {
   .functions__block {
     width: 593px;
-    padding: 77px 63px 57px 52px;
+    padding: 77px 63px 16px 52px;
     margin: 0 30px;
   }
 }
@@ -27,7 +27,7 @@
 @media (min-width: $desktop-width) {
   .functions__block {
     width: 457px;
-    padding: 47px 61px 55px 52px;
+    padding: 47px 61px 50px 52px;
     margin: 0;
   }
 }
@@ -102,12 +102,17 @@
 
 .functions__block--slim {
   margin-bottom: 20px;
+  background-color: #f2f2f2;
 }
 
 @media (min-width: $tablet-width) {
   .functions__block--slim {
     margin-bottom: 30px;
   }
+}
+
+.functions__block--weight {
+  background-color: #f2f2f2;
 }
 
 .functions__block--weight::after {
@@ -162,6 +167,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .functions__title--slim {
+    padding: 30px 0 73px 141px;
+  }
+}
+
 .functions__description {
   margin: 0;
   padding: 0 33px 38px 20px;
@@ -172,14 +183,14 @@
     font-size: 16px;
     line-height: 24px;
     width: 340px;
-    padding: 0 0 48px 0;
+    padding: 0 0 54px 0;
     color: $base-color-title;
   }
 }
 
 @media (min-width: $desktop-width) {
   .functions__description {
-    padding: 0 0 23px 0;
+    padding: 0 0 28px 0;
     width: 457px;
   }
 }
@@ -192,7 +203,7 @@
   color: $base-color-title;
   text-transform: uppercase;
   background-image: url("../../images/icons/arrow.svg#arrow");
-  background-size: 32px 10px;
+  background-size: 46px 10px;
   background-repeat: no-repeat;
   background-position: 98px center;
   width: 139px;
@@ -208,6 +219,12 @@
     text-decoration: none;
     padding: 0;
     width: 165px;
-    background-position: 133px center;
+    background-position: 121px center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .functions__link {
+    background-position: 128px center;
   }
 }

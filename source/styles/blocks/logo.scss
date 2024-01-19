@@ -22,7 +22,13 @@
 
 @media (min-width: $tablet-width) {
   .logo__text {
-    padding-right: 94px;
+    padding-right: 97px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo__text--form {
+    padding-right: 100px;
   }
 }
 

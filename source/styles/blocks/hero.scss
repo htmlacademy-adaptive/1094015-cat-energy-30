@@ -64,6 +64,7 @@
     width: 414px;
     grid-row-start: 1;
     grid-column-start: 1;
+    height: 237px;
   }
 }
 
@@ -120,7 +121,7 @@
 
 @media (min-width: $desktop-width) {
   .hero__subtitle {
-    padding: 0 0 52px 0;
+    padding: 0;
   }
 }
 

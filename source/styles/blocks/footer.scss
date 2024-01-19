@@ -6,9 +6,9 @@
 
 @media (min-width: $tablet-width) {
   .footer {
-    width: 708px;
+    width: 713px;
     height: 37px;
-    padding: 55px 30px;
+    padding: 57px 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,6 +35,7 @@
 @media (min-width: $tablet-width) {
   .footer__logo {
     padding: 0;
+    width: 217px;
   }
 }
 

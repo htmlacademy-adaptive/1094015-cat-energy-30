@@ -3,3 +3,18 @@
   border: none;
   margin-bottom: 21px;
 }
+
+@media (min-width: $tablet-width) {
+  .send__button {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 66px;
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .send__button {
+    width: 570px;
+  }
+}

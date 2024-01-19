@@ -31,6 +31,18 @@
   mask-image: url("../../images/icons/vkontakte.svg#vkontakte");
 }
 
+@media (min-width: $tablet-width) {
+  .social__link--vkontakte::before {
+    left: -23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__link--vkontakte::before {
+    left: -40px;
+  }
+}
+
 .social__link--youtube::before {
   width: 28px;
   height: 22px;
@@ -38,9 +50,36 @@
   mask-image: url("../../images/icons/youtube.svg#youtube");
 }
 
+@media (min-width: $tablet-width) {
+  .social__link--youtube::before {
+    width: 26px;
+    height: 20px;
+    left: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__link--youtube::before {
+    left: -10px;
+  }
+}
+
 .social__link--telegram::before {
   width: 28px;
   height: 22px;
   left: 35px;
   mask-image: url("../../images/icons/telegram.svg#telegram");
+}
+
+@media (min-width: $tablet-width) {
+  .social__link--telegram::before {
+    width: 24px;
+    height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__link--telegram::before {
+    left: 18px;
+  }
 }

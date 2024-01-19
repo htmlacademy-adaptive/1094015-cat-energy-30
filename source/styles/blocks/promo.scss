@@ -5,6 +5,24 @@
   margin: 35px 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .promo {
+    width: 707px;
+    height: 200px;
+    background-image: url("../../images/catalog/background/gift-tablet@1x.jpg");
+    margin: 73px 31px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 245px;
+    height: 288px;
+    background-image: url("../../images/catalog/background/gift-mobile@1x.jpg");
+    margin-top: 191px;
+  }
+}
+
 .promo__text {
   font-weight: 400;
   font-size: 16px;
@@ -14,6 +32,23 @@
   text-align: center;
   padding-top: 187px;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__text {
+    text-align: left;
+    padding-top: 69px;
+    padding-left: 421px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__text {
+    text-align: center;
+    padding-top: 185px;
+    padding-left: 41px;
+    width: 161px;
+  }
 }
 
 .promo__text::before {
@@ -28,4 +63,20 @@
   background-size: 78px 80px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__text::before {
+    width: 80px;
+    height: 82px;
+    top: 54px;
+    left: 17%;
+    background-size: 80px 82px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__text::before {
+    left: 60%;
+  }
 }
