@@ -23,7 +23,7 @@
   height: 45px;
   width: 280px;
   display: flex;
-  gap: 13px;
+  gap: 12px;
   list-style: none;
 }
 
@@ -43,11 +43,13 @@
 
 .form__group:last-child {
   padding: 0 20px 24px 20px;
+  border-bottom: 1px solid $bg-dark-gray;
 }
 
 @media (min-width: $tablet-width) {
   .form__group:last-child {
     padding: 0 0 72px 0;
+    border-bottom: none;
   }
 }
 
@@ -75,7 +77,7 @@
   height: 18px;
   width: 228px;
   border: 1px solid $bg-border-gray;
-  padding: 14px 0 13px 15px;
+  padding: 12px 0 12px 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -98,6 +100,7 @@
   list-style: none;
   margin: 0;
   padding: 22px 20px 19px 20px;
+  border-bottom: 1px solid $bg-dark-gray;
 }
 
 @media (min-width: $tablet-width) {
@@ -119,6 +122,25 @@
   font-family: "Oswald", sans-serif;
   color: $base-color-title;
   margin: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.form__information::before {
+  transform: translateY(-50%);
+  height: 2px;
+  background-color: $bg-basic-white;
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.form__information::after {
+  height: 2px;
+  background-color: $bg-basic-green;
+  content: "";
+  position: absolute;
+  z-index: -2;
 }
 
 @media (min-width: $tablet-width) {
@@ -134,13 +156,59 @@
 
 @media (min-width: $tablet-width) {
   .form__information--contacts {
-    padding: 63px 0 75px 0;
+    padding: 65px 0 75px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__information--contacts {
     padding: 0 0 75px;
+  }
+}
+
+.form__information--contacts::before {
+  top: 50%;
+  left: -20px;
+  right: -20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__information--contacts::before {
+    top: 87px;
+    left: -41px;
+    width: 592px;
+    height: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__information--contacts::before {
+    top: 20px;
+    left: -41px;
+    width: 592px;
+    height: 6px;
+  }
+}
+
+.form__information--contacts::after {
+  top: 42px;
+  left: 228px;
+  width: 93px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__information--contacts::after {
+    top: 87px;
+    left: -70px;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__information--contacts::after {
+    top: 20px;
+    left: -109px;
+    width: 1440px;
   }
 }
 
@@ -160,8 +228,54 @@
   }
 }
 
+.form__information--comments::before {
+  top: 50%;
+  left: -20px;
+  right: -20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__information--comments::before {
+    top: 21px;
+    left: -40px;
+    width: 262px;
+    height: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__information--comments::before {
+    top: 21px;
+    left: -40px;
+    width: 262px;
+    height: 6px;
+  }
+}
+
+.form__information--comments::after {
+  top: 15px;
+  left: 161px;
+  width: 159px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__information--comments::after {
+    top: 21px;
+    left: -70px;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__information--comments::after {
+    top: 21px;
+    left: -110px;
+    width: 1440px;
+  }
+}
+
 .form__information--additionally {
-  padding: 0 0 34px 20px;
+  padding: 0 0 32px 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -173,6 +287,52 @@
 @media (min-width: $desktop-width) {
   .form__information--additionally {
     padding: 65px 0 59px 0;
+  }
+}
+
+.form__information--additionally::before {
+  top: 50%;
+  left: -20px;
+  right: -20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__information--additionally::before {
+    top: 82px;
+    left: -41px;
+    width: 292px;
+    height: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__information--additionally::before {
+    top: 89px;
+    left: -41px;
+    width: 292px;
+    height: 6px;
+  }
+}
+
+.form__information--additionally::after {
+  top: 12px;
+  left: 181px;
+  width: 139px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__information--additionally::after {
+    top: 82px;
+    left: -70px;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__information--additionally::after {
+    top: 89px;
+    left: -110px;
+    width: 1440px;
   }
 }
 

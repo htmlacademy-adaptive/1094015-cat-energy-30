@@ -5,6 +5,10 @@
   height: 157px;
 }
 
+.group:last-child {
+  border: none;
+}
+
 @media (min-width: $tablet-width) {
   .group {
     grid-template-columns: 1fr 1fr;
@@ -48,27 +52,43 @@
   }
 }
 
+.group__label {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
 @media (min-width: $tablet-width) {
   .group__label {
-    display: flex;
     gap: 20px;
-    align-items: center;
   }
+}
+
+.group__input--check {
+  position: relative;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid $bg-border-special-gray;
+  cursor: pointer;
+  appearance: none;
 }
 
 @media (min-width: $tablet-width) {
   .group__input--check {
-    position: relative;
-    top: 0;
     width: 40px;
     height: 40px;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    border: 1px solid $bg-border-special-gray;
-    cursor: pointer;
-    appearance: none;
   }
+}
+
+.group__input--check:checked {
+  background-image: url("../../images/icons/tick.svg#tick");
+  background-size: 18px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: $tablet-width) {

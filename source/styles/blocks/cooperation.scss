@@ -1,5 +1,7 @@
 .cooperation {
   height: 474px;
+  position: relative;
+  background-color: $bg-light-gray;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,19 +25,20 @@
 
 .cooperation__information {
   display: flex;
-  padding: 26px 20px 26px 20px;
+  padding: 26px 20px;
+  gap: 17px;
 }
 
 @media (min-width: $tablet-width) {
   .cooperation__information {
-    padding: 62px 70px 58px;
+    padding: 58px 70px 58px;
     column-gap: 307px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .cooperation__information {
-    padding: 63px 75px 57px 80px;
+    padding: 60px 75px 57px 80px;
     position: absolute;
     z-index: 1;
     background-color: $bg-basic-white;
@@ -87,5 +90,39 @@
   .cooperation__address span {
     display: block;
     padding-top: 20px;
+  }
+}
+
+.cooperation__pin {
+  position: absolute;
+  background-image: url("../../images/common/pin/map-pin-mobile@1x.png");
+  left: 51%;
+  top: 59%;
+  transform: translate(-50%, -50%);
+  width: 57px;
+  height: 57px;
+  background-size: 55px 53px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation__pin {
+    top: 66%;
+    width: 113px;
+    height: 106px;
+    background-size: 113px 106px;
+    background-image: url("../../images/common/pin/map-pin-tablet@1x.png");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation__pin {
+    top: 46%;
+    left: 67%;
+    width: 113px;
+    height: 106px;
+    background-size: 113px 106px;
+    background-image: url("../../images/common/pin/map-pin-desktop@1x.png");
   }
 }

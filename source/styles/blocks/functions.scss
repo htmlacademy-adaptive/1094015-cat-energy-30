@@ -13,12 +13,13 @@
   position: relative;
   margin: 0 20px 0 20px;
   width: 280px;
-  height: 278px;
+  height: 267px;
 }
 
 @media (min-width: $tablet-width) {
   .functions__block {
     width: 593px;
+    height: 279px;
     padding: 77px 63px 16px 52px;
     margin: 0 30px;
   }
@@ -40,7 +41,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #68b738;
+  background-color: $bg-basic-green;
 }
 
 @media (min-width: $tablet-width) {
@@ -80,8 +81,8 @@
   background-image: url("../../images/icons/cat.svg#cat");
   background-size: 36px 50px;
   background-position: center top;
-  top: 9px;
-  left: 13px;
+  top: 21px;
+  left: 11px;
 }
 
 @media (min-width: $tablet-width) {
@@ -102,7 +103,7 @@
 
 .functions__block--slim {
   margin-bottom: 20px;
-  background-color: #f2f2f2;
+  background-color: $bg-light-gray;
 }
 
 @media (min-width: $tablet-width) {
@@ -112,7 +113,7 @@
 }
 
 .functions__block--weight {
-  background-color: #f2f2f2;
+  background-color: $bg-light-gray;
 }
 
 .functions__block--weight::after {
@@ -174,8 +175,9 @@
 }
 
 .functions__description {
-  margin: 0;
-  padding: 0 33px 38px 20px;
+  margin: 0 20px;
+  border-bottom: 1px solid $bg-dark-gray;
+  padding-bottom: 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -185,6 +187,7 @@
     width: 340px;
     padding: 0 0 54px 0;
     color: $base-color-title;
+    margin: 0;
   }
 }
 
@@ -203,13 +206,15 @@
   color: $base-color-title;
   text-transform: uppercase;
   background-image: url("../../images/icons/arrow.svg#arrow");
-  background-size: 46px 10px;
+  background-size: 62px 12px;
   background-repeat: no-repeat;
-  background-position: 98px center;
+  background-position: 103px center;
   width: 139px;
   display: flex;
   padding-left: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -219,12 +224,23 @@
     text-decoration: none;
     padding: 0;
     width: 165px;
-    background-position: 121px center;
+    background-position: 114px center;
+    margin-top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .functions__link {
     background-position: 128px center;
+  }
+}
+
+.functions__link--weight {
+  background-position: 99px center;
+}
+
+@media (min-width: $tablet-width) {
+  .functions__link--weight {
+    background-position: 111px center;
   }
 }

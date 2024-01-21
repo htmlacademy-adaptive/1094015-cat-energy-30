@@ -66,7 +66,7 @@
   line-height: 14px;
   text-align: left;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 27px;
 }
 
 @media (min-width: $tablet-width) {
@@ -99,7 +99,9 @@
 }
 
 .product__button {
-  padding: 10px 109px;
+  padding: 8px 109px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,15 +1,20 @@
 .site-list__item {
-  border-top: 1px solid #e6e6e6;
   text-align: center;
-  padding: 22px 0 24px 0;
+  padding-top: 22px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $bg-line-gray;
 }
+
+// .site-list__item:last-child {
+//   padding-bottom: 0;
+// }
 
 @media (min-width: $tablet-width) {
   .site-list__item {
     font-size: 18px;
     line-height: 24px;
     padding: 0;
-    border-top: none;
+    border: none;
     margin-left: 34px;
   }
 }
@@ -51,15 +56,10 @@
   }
 }
 
-
-.site-list__link--current {
-  border-bottom: 2px solid $bg-basic-green;
-  padding-bottom: 4px;
-}
-
 @media (min-width: $tablet-width) {
   .site-list__link--current {
     padding-bottom: 5px;
+    border-bottom: 1px solid $bg-basic-green;
   }
 }
 
