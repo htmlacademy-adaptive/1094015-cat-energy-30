@@ -85,7 +85,7 @@
 }
 
 .group__input--check:checked {
-  background-image: url("../../images/icons/tick.svg#tick");
+  background-image: url("../../images/icons/stack.svg#tick");
   background-size: 18px 14px;
   background-repeat: no-repeat;
   background-position: center;
@@ -93,7 +93,7 @@
 
 @media (min-width: $tablet-width) {
   .group__input--check:checked {
-    background-image: url("../../images/icons/tick.svg#tick");
+    background-image: url("../../images/icons/stack.svg#tick");
     background-size: 24px 19px;
     background-repeat: no-repeat;
     background-position: center;

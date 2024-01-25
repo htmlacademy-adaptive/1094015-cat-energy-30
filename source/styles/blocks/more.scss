@@ -2,6 +2,20 @@
   position: relative;
 }
 
+@media (min-width: $tablet-width) {
+  .more {
+    box-sizing: border-box;
+    border: 2px solid $bg-light-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more {
+    box-sizing: border-box;
+    border: 2px solid $bg-light-gray;
+  }
+}
+
 .more::before {
   content: "";
   position: absolute;

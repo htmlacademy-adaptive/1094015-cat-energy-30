@@ -7,8 +7,8 @@
 @media (min-width: $tablet-width) {
   .card__container {
     display: block;
-    height: 172px;
-    padding-bottom: 260px;
+    height: 175px;
+    padding-bottom: 258px;
   }
 }
 
@@ -16,8 +16,7 @@
   .card__product {
     display: block;
     height: 172px;
-    padding-bottom: 41px;
-    padding-top: 20px;
+    padding-top: 18px;
   }
 }
 
@@ -34,45 +33,21 @@
 
 .card__image {
   padding: 11px 25px;
-  width: 90px;
-  height: 86px;
+  width: 140px;
+  height: 107px;
 }
 
 @media (min-width: $tablet-width) {
   .card__image {
-    padding: 19px 0;
-    width: 100%;
-    height: 100%;
+    padding: 2px 0 0 63px;
+    width: 200px;
+    height: 210px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .card__image {
-    padding: 20px 0 27px 0;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .card__image--fish {
-    padding: 20px 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .card__image--fish {
-    padding: 19px 0 27px 0;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .card__image--buckwheat {
-    padding: 20px 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .card__image--buckwheat {
-    padding: 21px 0 28px 0;
+    padding: 0 0 9px 22px;
   }
 }
 
@@ -131,6 +106,8 @@
   .card__list {
     width: 250px;
     border-bottom: 1px solid $bg-border-special-gray;
+    height: 20px;
+    padding-bottom: 11px;
   }
 }
 

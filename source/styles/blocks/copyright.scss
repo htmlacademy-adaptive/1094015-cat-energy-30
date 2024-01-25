@@ -20,7 +20,7 @@
 .copyright__link::before {
   width: 27px;
   height: 34px;
-  mask-image: url("../../images/icons/logo.svg#logo");
+  mask-image: url("../../images/icons/stack.svg#logo");
   content: "";
   position: absolute;
   top: 0;
@@ -63,13 +63,6 @@
   line-height: 20px;
   margin-top: 7px;
 }
-
-// @media (min-width: $tablet-width) {
-//   .copyright__text {
-//     font-size: 16px;
-//     line-height: 20px;
-//   }
-// }
 
 .copyright__text:hover {
   color: $base-color-text;

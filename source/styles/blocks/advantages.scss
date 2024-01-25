@@ -7,7 +7,7 @@
   .advantages {
     width: 768px;
     margin: 0;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid $bg-line-gray;
   }
 }
 
@@ -114,7 +114,7 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  background-color: #68b738;
+  background-color: $bg-basic-green;
   top: 0;
   left: 20px;
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@
 }
 
 .advantages__item--sheet::before {
-  background-image: url("../../images/icons/sheet.svg#sheet");
+  background-image: url("../../images/icons/stack.svg#sheet");
   background-size: 25px 28px;
 }
 
@@ -187,7 +187,7 @@
 }
 
 .advantages__item--powder::before {
-  background-image: url("../../images/icons/powder.svg#powder");
+  background-image: url("../../images/icons/stack.svg#powder");
   background-size: 26px 29px;
 }
 
@@ -198,7 +198,7 @@
 }
 
 .advantages__item--meal::before {
-  background-image: url("../../images/icons/meal.svg#meal");
+  background-image: url("../../images/icons/stack.svg#meal");
   background-size: 25px 30px;
 }
 
@@ -209,7 +209,7 @@
 }
 
 .advantages__item--scales::before {
-  background-image: url("../../images/icons/scales.svg#scales");
+  background-image: url("../../images/icons/stack.svg#scales");
   background-size: 26px 31px;
 }
 

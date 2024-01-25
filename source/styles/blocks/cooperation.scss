@@ -31,7 +31,7 @@
 
 @media (min-width: $tablet-width) {
   .cooperation__information {
-    padding: 58px 70px 58px;
+    padding: 62px 70px;
     column-gap: 307px;
   }
 }
@@ -93,6 +93,10 @@
   }
 }
 
+.cooperation__image {
+  display: block;
+}
+
 .cooperation__pin {
   position: absolute;
   background-image: url("../../images/common/pin/map-pin-mobile@1x.png");
@@ -108,7 +112,7 @@
 
 @media (min-width: $tablet-width) {
   .cooperation__pin {
-    top: 66%;
+    top: 67%;
     width: 113px;
     height: 106px;
     background-size: 113px 106px;

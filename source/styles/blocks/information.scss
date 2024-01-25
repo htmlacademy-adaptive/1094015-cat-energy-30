@@ -33,7 +33,7 @@
 }
 
 .information--email::after {
-  mask-image: url("../../images/icons/mail.svg#mail");
+  mask-image: url("../../images/icons/stack.svg#mail");
   top: 16px;
   right: 33px;
   width: 18px;
@@ -42,7 +42,7 @@
 
 @media (min-width: $tablet-width) {
   .information--email::after {
-    mask-image: url("../../images/icons/mail.svg#mail");
+    mask-image: url("../../images/icons/stack.svg#mail");
     top: 20px;
     right: 15px;
     width: 18px;
@@ -65,7 +65,7 @@
 }
 
 .information--telephone::after {
-  mask-image: url("../../images/icons/telephone.svg#telephone");
+  mask-image: url("../../images/icons/stack.svg#telephone");
   top: 15px;
   right: 34px;
   width: 17px;
@@ -74,7 +74,7 @@
 
 @media (min-width: $tablet-width) {
   .information--telephone::after {
-    mask-image: url("../../images/icons/telephone.svg#telephone");
+    mask-image: url("../../images/icons/stack.svg#telephone");
     top: 19px;
     right: 16px;
     width: 16px;

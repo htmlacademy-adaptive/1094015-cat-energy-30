@@ -10,6 +10,11 @@
   outline: none;
 }
 
+.header__toggle--nojs {
+  display: none;
+  cursor: none;
+}
+
 @media (min-width: $tablet-width) {
   .header__toggle {
     display: none;
@@ -75,7 +80,7 @@
   .header__container {
     display: flex;
     align-items: center;
-    padding: 20px 34px 52px 30px;
+    padding: 20px 34px 54px 30px;
     width: 724px;
     margin: 0;
   }

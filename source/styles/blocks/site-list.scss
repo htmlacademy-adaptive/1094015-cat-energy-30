@@ -5,10 +5,6 @@
   border-bottom: 1px solid $bg-line-gray;
 }
 
-// .site-list__item:last-child {
-//   padding-bottom: 0;
-// }
-
 @media (min-width: $tablet-width) {
   .site-list__item {
     font-size: 18px;
@@ -58,8 +54,8 @@
 
 @media (min-width: $tablet-width) {
   .site-list__link--current {
-    padding-bottom: 5px;
-    border-bottom: 1px solid $bg-basic-green;
+    padding-bottom: 2px;
+    border-bottom: 3px solid $bg-basic-green;
   }
 }
 

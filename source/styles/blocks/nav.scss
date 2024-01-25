@@ -12,6 +12,12 @@
   transition: transform 0.5s, visibility 0.5s;
 }
 
+.nav--nojs {
+  position: static;
+  visibility: visible;
+  margin: 0;
+}
+
 @media (min-width: $tablet-width) {
   .nav {
     position: static;

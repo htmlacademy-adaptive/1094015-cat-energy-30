@@ -1,25 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('toggle').addEventListener('click', () => {
-    document.querySelector('.header').classList.toggle('open');
-  });
-});
+const navHeader = document.querySelector('header');
+const navToggle = document.querySelector('header__toggle');
 
-// Закрыть меню при нажатии на Esc
-window.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    document.querySelector('.header').classList.remove('open');
-  }
-});
+navHeader.classList.remove('header__toggle--nojs');
+navToggle.classList.remove('nav--nojs');
 
-// Закрыть меню при клике вне его
-document.getElementById('nav').addEventListener('click', (event) => {
-  event._isClickWithInMenu = true;
-});
-document.getElementById('toggle').addEventListener('click', (event) => {
-  event._isClickWithInMenu = true;
-});
-document.body.addEventListener('click', (event) => {
-  if (event._isClickWithInMenu) {
-    document.querySelector('.header').classList.remove('open');
-  }
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('header__toggle--close');
+  navToggle.classList.toggle('toggle__toggle--open');
+  navToggle.classList.toggle('open');
+  navToggle.classList.toggle('close');
 });
