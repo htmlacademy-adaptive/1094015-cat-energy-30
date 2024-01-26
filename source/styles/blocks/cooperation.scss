@@ -17,6 +17,25 @@
   }
 }
 
+.cooperation iframe {
+  border: none;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation iframe {
+    width: 768px;
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation iframe {
+    width: 1440px;
+    height: 400px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .cooperation--version {
     background-color: $bg-light-gray;
@@ -31,7 +50,7 @@
 
 @media (min-width: $tablet-width) {
   .cooperation__information {
-    padding: 62px 70px;
+    padding: 59px 54px 57px 70px;
     column-gap: 307px;
   }
 }
@@ -93,8 +112,13 @@
   }
 }
 
+.cooperation__map {
+  width: 100%;
+}
+
 .cooperation__image {
   display: block;
+  max-width: none;
 }
 
 .cooperation__pin {
@@ -123,7 +147,7 @@
 @media (min-width: $desktop-width) {
   .cooperation__pin {
     top: 46%;
-    left: 67%;
+    left: 68%;
     width: 113px;
     height: 106px;
     background-size: 113px 106px;

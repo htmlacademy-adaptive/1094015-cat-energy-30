@@ -16,6 +16,14 @@
   }
 }
 
+.logo__image:hover {
+  opacity: 0.8;
+}
+
+.logo__image:active {
+  opacity: 0.6;
+}
+
 .logo__text {
   padding-right: 72px;
 }
@@ -25,6 +33,11 @@
     padding-right: 59px;
   }
 }
+@media (min-width: $desktop-width) {
+  .logo__text {
+    padding-right: 543px;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .logo__text--form {
@@ -32,8 +45,10 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .logo__text {
-    padding-right: 543px;
-  }
+.logo__text:hover {
+  opacity: 0.8;
+}
+
+.logo__text:active {
+  opacity: 0.6;
 }

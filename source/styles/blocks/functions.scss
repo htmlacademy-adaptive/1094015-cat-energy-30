@@ -195,6 +195,7 @@
   .functions__description {
     padding: 0 0 28px 0;
     width: 457px;
+    border-bottom: none;
   }
 }
 
@@ -231,7 +232,8 @@
 
 @media (min-width: $desktop-width) {
   .functions__link {
-    background-position: 128px center;
+    background-position: 114px center;
+    margin-top: -2px;
   }
 }
 

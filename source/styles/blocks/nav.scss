@@ -6,7 +6,6 @@
   z-index: 2;
   margin-top: 65px;
   width: 320px;
-  height: 199px;
   list-style: none;
   visibility: hidden;
   transition: transform 0.5s, visibility 0.5s;
@@ -25,7 +24,6 @@
     margin: 0;
     transition: none;
     width: 487px;
-    height: 24px;
     display: flex;
     visibility: visible;
     background-color: transparent;
@@ -54,7 +52,6 @@
     align-items: center;
     margin-left: auto;
     width: 493px;
-    padding-bottom: 13px;
   }
 }
 
