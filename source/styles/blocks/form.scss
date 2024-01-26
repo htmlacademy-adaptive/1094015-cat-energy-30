@@ -143,15 +143,15 @@
 }
 
 .form__information::before {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 100vw;
-    height: 2px;
-    background-color: $bg-basic-green;
-    box-shadow: 100vw 0 0 $bg-basic-green;
-    z-index: -1;
-    content: "";
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 100vw;
+  height: 2px;
+  background-color: $bg-basic-green;
+  box-shadow: 100vw 0 0 $bg-basic-green;
+  z-index: -1;
+  content: "";
 }
 
 .form__information--contacts {
