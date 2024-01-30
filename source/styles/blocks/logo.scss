@@ -1,5 +1,5 @@
 .logo__image {
-  padding-right: 56px;
+  padding-right: 60px;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,13 +16,21 @@
   }
 }
 
+.logo__image:hover {
+  opacity: 0.8;
+}
+
+.logo__image:active {
+  opacity: 0.6;
+}
+
 .logo__text {
   padding-right: 72px;
 }
 
 @media (min-width: $tablet-width) {
   .logo__text {
-    padding-right: 94px;
+    padding-right: 59px;
   }
 }
 
@@ -30,4 +38,18 @@
   .logo__text {
     padding-right: 543px;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .logo__text--form {
+    padding-right: 100px;
+  }
+}
+
+.logo__text:hover {
+  opacity: 0.8;
+}
+
+.logo__text:active {
+  opacity: 0.6;
 }

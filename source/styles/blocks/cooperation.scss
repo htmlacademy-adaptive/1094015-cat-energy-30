@@ -1,39 +1,63 @@
 .cooperation {
-  height: 474px;
+  min-height: 474px;
+  position: relative;
+  background-color: $bg-light-gray;
 }
 
 @media (min-width: $tablet-width) {
   .cooperation {
-    height: 600px;
+    min-height: 600px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .cooperation {
-    height: 400px;
     position: relative;
+    min-height: 400px;
   }
 }
 
-.cooperation--version {
-  background-color: $bg-light-gray;
+.cooperation iframe {
+  border: none;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation iframe {
+    width: 768px;
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation iframe {
+    width: 1440px;
+    height: 400px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation--version {
+    background-color: $bg-light-gray;
+  }
 }
 
 .cooperation__information {
   display: flex;
-  padding: 26px 20px 26px 20px;
+  padding: 26px 20px;
+  gap: 17px;
 }
 
 @media (min-width: $tablet-width) {
   .cooperation__information {
-    padding: 60px 70px;
-    justify-content: space-between;
+    padding: 62px 54px 57px 70px;
+    column-gap: 307px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .cooperation__information {
-    padding: 60px 78px 60px 80px;
+    padding: 60px 75px 57px 80px;
     position: absolute;
     z-index: 1;
     background-color: $bg-basic-white;
@@ -70,6 +94,14 @@
   .cooperation__address {
     font-size: 16px;
     width: 157px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation__address {
+    width: 161px;
+    text-align: left;
   }
 }
 
@@ -77,5 +109,63 @@
   .cooperation__address span {
     display: block;
     padding-top: 20px;
+  }
+}
+
+.cooperation__map {
+  width: 100%;
+}
+
+.cooperation__image {
+  display: block;
+  max-width: none;
+}
+
+.cooperation__pin {
+  position: absolute;
+  background-image: image-set(
+      url("../../images/common/pin/map-pin-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/common/pin/map-pin-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/common/pin/map-pin-mobile@2x.png") 2x,
+      url("../../images/common/pin/map-pin-mobile@1x.png") 1x
+    );
+  left: 51%;
+  top: 59%;
+  transform: translate(-50%, -50%);
+  width: 57px;
+  height: 57px;
+  background-size: 55px 53px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation__pin {
+    top: 67%;
+    width: 113px;
+    height: 106px;
+    background-size: 113px 106px;
+    background-image: image-set(
+      url("../../images/common/pin/map-pin-tablet@2x.webp") type("image/webp") 2x,
+      url("../../images/common/pin/map-pin-tablet@1x.webp") type("image/webp") 1x,
+      url("../../images/common/pin/map-pin-tablet@2x.png") 2x,
+      url("../../images/common/pin/map-pin-tablet@1x.png") 1x
+    );
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation__pin {
+    top: 46%;
+    left: 68%;
+    width: 113px;
+    height: 106px;
+    background-size: 113px 106px;
+     background-image: image-set(
+      url("../../images/common/pin/map-pin-desktop@2x.webp") type("image/webp") 2x,
+      url("../../images/common/pin/map-pin-desktop@1x.webp") type("image/webp") 1x,
+      url("../../images/common/pin/map-pin-desktop@2x.png") 2x,
+      url("../../images/common/pin/map-pin-desktop@1x.png") 1x
+    );
   }
 }
