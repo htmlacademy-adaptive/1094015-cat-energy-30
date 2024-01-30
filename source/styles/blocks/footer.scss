@@ -6,23 +6,29 @@
 
 @media (min-width: $tablet-width) {
   .footer {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__container {
     width: 713px;
-    height: 37px;
-    padding: 59px 30px;
+    min-height: 37px;
+    padding: 55px 30px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .footer {
+  .footer__container {
     width: 1220px;
-    height: 37px;
+    min-height: 37px;
     padding: 66px 110px;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }

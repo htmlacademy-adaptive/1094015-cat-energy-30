@@ -1,3 +1,7 @@
+.form__wrapper {
+  padding-bottom: 28px;
+}
+
 @media (min-width: $tablet-width) {
   .form__wrapper {
     padding-bottom: 64px;
@@ -8,6 +12,7 @@
   .form__wrapper {
     display: flex;
     gap: 80px;
+    padding-bottom: 0;
   }
 }
 
@@ -26,7 +31,7 @@
 
 .form__group {
   padding: 0 20px 14px 20px;
-  height: 45px;
+  min-height: 45px;
   width: 280px;
   display: flex;
   gap: 12px;
@@ -36,7 +41,7 @@
 @media (min-width: $tablet-width) {
   .form__group {
     padding: 0 0 20px 0;
-    height: 52px;
+    min-height: 52px;
     width: 628px;
   }
 }
@@ -80,7 +85,7 @@
   font-family: "Oswald", sans-serif;
   color: $base-color-text;
   text-transform: uppercase;
-  height: 18px;
+  min-height: 18px;
   width: 228px;
   border: 1px solid $bg-border-gray;
   padding: 12px 0 12px 17px;
@@ -89,7 +94,7 @@
 @media (min-width: $tablet-width) {
   .form__input {
     padding: 9px 0 10px 20px;
-    height: 30px;
+    min-height: 30px;
     width: 568px;
     font-size: 20px;
     line-height: 29px;
@@ -131,7 +136,7 @@
   position: relative;
   display: inline-block;
   width: fit-content;
-  box-shadow: -40px 0 0 0 $bg-basic-white, 40px 0 0 0 $bg-basic-white;
+  box-shadow: -20px 0 0 0 $bg-basic-white, 20px 0 0 0 $bg-basic-white;
   background-color: $bg-basic-white;
 }
 
@@ -139,28 +144,37 @@
   .form__information {
     font-size: 36px;
     line-height: 36px;
+    box-shadow: -40px 0 0 0 $bg-basic-white, 40px 0 0 0 $bg-basic-white;
   }
 }
 
 .form__information::before {
   position: absolute;
-  top: 20px;
+  top: 14px;
   right: 0;
   width: 100vw;
-  height: 2px;
+  min-height: 2px;
   background-color: $bg-basic-green;
   box-shadow: 100vw 0 0 $bg-basic-green;
   z-index: -1;
   content: "";
 }
 
+@media (min-width: $tablet-width) {
+  .form__information::before {
+    top: 21px;
+  }
+}
+
 .form__information--contacts {
-  padding: 26px 113px 35px 20px;
+  padding: 0 0 35px 20px;
+  width: 187px;
 }
 
 @media (min-width: $tablet-width) {
   .form__information--contacts {
     padding: 0 0 75px 0;
+    width: 514px;
   }
 }
 
@@ -171,7 +185,7 @@
 }
 
 .form__information--comments {
-  padding: 0 179px 38px 20px;
+  padding: 0 0 38px 20px;
 }
 
 @media (min-width: $tablet-width) {

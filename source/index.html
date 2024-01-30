@@ -9,6 +9,8 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -64,15 +66,8 @@
           <div class="hero__content">
             <h1 class="hero__title">Функциональное питание&nbsp;для&nbsp;котов</h1>
             <p class="hero__subtitle">Занялся собой? Займись котом!</p>
+            <a class="hero__link button" href="form.html">Подобрать программу</a>
           </div>
-          <div class="hero__container">
-            <picture>
-              <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index/goods/index-can-desktop@1x.png 1x, images/index/goods/index-can-desktop@2x.png 2x">
-              <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index/goods/index-can-tablet@1x.png 1x, images/index/goods/index-can-tablet@2x.png 2x">
-              <img class="hero__image" src="images/index/goods/index-can-mobile@1x.png" srcset="images/index/goods/index-can-mobile@2x.png 2x" width="280" height="270" alt="Внешний вид упаковки.">
-            </picture>
-          </div>
-          <a class="hero__link button" href="form.html">Подобрать программу</a>
         </div>
       </section>
       <section class="functions">
@@ -101,16 +96,18 @@
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный&nbsp;результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="example__stats">
-            <dl class="example__params">
-              <div class="example__params-item">
-                <dt class="example__key"><span class="example__key-text">снижение веса</span></dt>
-                <dd class="example__value">5 КГ</dd>
+            <div class="example__params-item">
+              <div class="example__value">
+                5 КГ
               </div>
-              <div class="example__params-item">
-                <dt class="example__key"><span class="example__key-text">затрачено времени</span></dt>
-                <dd class="example__value">60 ДНЕЙ</dd>
+              <span class="example__key">снижение веса</span>
+            </div>
+            <div class="example__params-item">
+              <div class="example__value">
+                60 ДНЕЙ
               </div>
-            </dl>
+              <span class="example__key">затрачено времени</span>
+            </div>
             <p class="example__price">Затраты на питание: <span>15 000 РУБ.</span></p>
           </div>
         </div>
@@ -118,12 +115,16 @@
           <div class="slider__image">
             <div class="slider__image-wrapper slider__image-wrapper--before">
               <picture>
+                <source type="image/webp" width="560" height="512" media="(min-width: 768px)" srcset="images/index/slider/cat-fat-tablet@1x.webp 1x, images/index/slider/cat-fat-tablet@2x.webp 2x">
+                <source type="image/webp" width="280" height="256" srcset="images/index/slider/cat-fat-mobile@1x.webp 1x, images/index/slider/cat-fat-mobile@2x.webp 2x">
                 <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index/slider/cat-fat-tablet@1x.png 1x, images/index/slider/cat-fat-tablet@2x.png 2x">
                 <img class="slider__image-before" src="images/index/slider/cat-fat-mobile@1x.png" srcset="images/index/slider/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Фотография кота: До.">
               </picture>
             </div>
             <div class="slider__image-wrapper slider__image-wrapper--after">
               <picture>
+                <source type="image/webp" width="560" height="512" media="(min-width: 768px)" srcset="images/index/slider/cat-skinny-tablet@1x.webp 1x, images/index/slider/cat-skinny-tablet@2x.webp 2x">
+                <source type="image/webp" width="280" height="256" srcset="images/index/slider/cat-skinny-mobile@1x.webp 1x, images/index/slider/cat-skinny-mobile@2x.webp 2x">
                 <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/index/slider/cat-skinny-tablet@1x.png 1x, images/index/slider/cat-skinny-tablet@2x.png 2x">
                 <img class="slider__image-after" src="images/index/slider/cat-skinny-mobile@1x.png" srcset="images/index/slider/cat-skinny-mobile@2x.png 2x" width="280" height="256" alt="Фотография кота: После.">
               </picture>
@@ -142,9 +143,12 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.82481031207365!2d30.32278833491824!3d59.93880450011677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1706189051634!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Месторасположение компании на карте"></iframe>
         <noscript>
           <picture>
+            <source type="image/webp" width="1440" height="400" media="(min-width: 1440px)" srcset="images/common/map/map-desktop@1x.webp 1x, images/common/map/map-desktop@2x.webp 2x">
+            <source type="image/webp" width="768" height="400" media="(min-width: 768px)" srcset="images/common/map/map-tablet@1x.webp 1x, images/common/map/map-tablet@2x.webp 2x">
+            <source type="image/webp" width="320" height="362" srcset="images/common/map/map-mobile@1x.webp 1x, images/common/map/map-mobile@2x.webp 2x">
             <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/common/map/map-desktop@1x.jpg 1x, images/common/map/map-desktop@2x.jpg 2x">
             <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/common/map/map-tablet@1x.jpg 1x, images/common/map/map-tablet@2x.jpg 2x">
-            <img class="cooperation__image" src="images/common/map/map-mobile@1x.jpg" srcset="images/common/map/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта на которой обозначено местоположение компании.">
+            <img class="cooperation__image" width="320" height="362" type="image/jpeg" src="images/common/map/map-mobile@1x.jpg" srcset="images/common/map/map-mobile@2x.jpg 2x" alt="Карта на которой обозначено местоположение компании.">
           </picture>
           <span class="cooperation__pin"></span>
         </noscript>
@@ -154,35 +158,37 @@
     <!-- Подвал -->
 
     <footer class="footer">
-      <a class="footer__logo" href="#">
-        <img class="footer__image" src="images/logo/footer-logo.svg" width="128" height="24" alt="Логотип компании Cat energy.">
-      </a>
-      <ul class="footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">
-            <span class="visually-hidden">Мы в Вконтакте</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
-            <span class="visually-hidden">Мы в Ютубе</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">
-            <span class="visually-hidden">Мы в Телеграме</span>
-          </a>
-        </li>
-      </ul>
-      <div class="footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="copyright__text">HTML Academy</p>
+      <div class="footer__container">
+        <a class="footer__logo" href="#">
+          <img class="footer__image" src="images/logo/footer-logo.svg" width="128" height="24" alt="Логотип компании Cat energy.">
         </a>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Мы в Ютубе</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="#">
+              <span class="visually-hidden">Мы в Телеграме</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">HTML Academy</p>
+          </a>
+        </div>
       </div>
     </footer>
 
   </div>
-  <script src="js/script.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

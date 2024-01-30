@@ -1,6 +1,6 @@
 .information {
   padding: 0 20px 14px;
-  height: 45px;
+  min-height: 45px;
   width: 280px;
   display: flex;
   gap: 13px;
@@ -10,9 +10,16 @@
 @media (min-width: $tablet-width) {
   .information {
     padding: 0 0 20px 0;
-    height: 52px;
+    min-height: 52px;
     width: 628px;
     position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .information {
+    min-height: 52px;
+    padding-bottom: 69px;
   }
 }
 
@@ -37,7 +44,7 @@
   top: 16px;
   right: 33px;
   width: 18px;
-  height: 14px;
+  min-height: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -133,19 +140,19 @@
   font-family: "Oswald", sans-serif;
   color: $base-color-text;
   text-transform: uppercase;
-  height: 18px;
+  min-height: 18px;
   width: 151px;
   border: 1px solid $bg-border-special-gray;
-  padding: 14px 49px 13px 15px;
+  padding: 14px 49px 11px 15px;
 }
 
 .information__input--telephone {
-  padding: 14px 41px 13px 15px;
+  padding: 14px 41px 11px 15px;
 }
 
 @media (min-width: $tablet-width) {
   .information__input {
-    height: 30px;
+    min-height: 30px;
     width: 552px;
     padding: 10px 0 10px 20px;
     font-size: 20px;

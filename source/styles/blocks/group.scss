@@ -2,7 +2,7 @@
   display: grid;
   margin: 0;
   padding: 0;
-  height: 157px;
+  min-height: 157px;
 }
 
 .group:last-child {
@@ -14,8 +14,8 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     width: 628px;
-    height: 131px;
-    margin: 0 0 34px 0;
+    min-height: 133px;
+    margin: 0 0 31px 0;
   }
 }
 
@@ -24,7 +24,7 @@
     display: flex;
     margin: 0 0 58px 0;
     width: 1125px;
-    height: 42px;
+    min-height: 40px;
   }
 }
 

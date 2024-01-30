@@ -17,12 +17,13 @@
     background: linear-gradient($bg-basic-white 133px, $bg-light-gray 133px);
     display: flex;
     width: 1440px;
+    padding-bottom: 45px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .example__text {
-    padding: 45px 30px 68px 30px;
+    padding: 45px 30px 81px 30px;
     width: 708px;
   }
 }
@@ -69,7 +70,7 @@
   .example__description {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 55px;
+    padding-bottom: 42px;
   }
 }
 
@@ -80,137 +81,70 @@
   }
 }
 
+.example__stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
   .example__stats {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 708px;
+    justify-content: start;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .example__stats {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 366px;
-    flex-wrap: wrap;
+@media (min-width: $tablet-width) {
+  .example__params--item {
+    padding-right: 43px;
   }
 }
 
-.example__params {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
+.example__value {
+  width: 122px;
+  min-height: 41px;
+  padding-top: 13px;
+  font-size: 24px;
+  line-height: 24px;
   text-align: center;
-  padding-bottom: 34px;
-}
-
-@media (min-width: $desktop-width) {
-  .example__params {
-    padding-bottom: 60px;
-  }
-}
-
-.example__params-item {
-  position: relative;
-  box-sizing: border-box;
-  padding: 15px 5px;
-  width: 124px;
-  min-height: 24px;
   border: 1px solid $bg-border-special-gray;
   border-radius: 3px;
+  font-family: "Oswald", sans-serif;
+  color: $base-color-title;
 }
 
 @media (min-width: $tablet-width) {
-  .example__params-item {
-    padding: 15px 0 11px 0;
-    width: 162px;
-    height: 71px;
-    margin-right: 43px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .example__params-item {
-    margin-right: 42px;
-    padding: 14px 29px 11px 29px;
-    width: 162px;
-    height: 72px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .example__params-item:last-child {
-    margin: 0;
+  .example__value {
+    width: 161px;
+    min-height: 58px;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: -10px;
   }
 }
 
 .example__key {
+  display: inline-block;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  padding-left: 13px;
+  padding-right: 15px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  color: $base-color-text;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transform: translateY(72%);
-}
-
-.example__key-text {
-  display: inline-flex;
-  max-width: 70%;
-  background-color: $bg-light-gray;
+  background-color: #f2f2f2;
 }
 
 @media (min-width: $tablet-width) {
-  .example__key-text {
-    background-color: $bg-basic-white;
-    max-width: 100%;
+  .example__key {
     font-size: 14px;
     line-height: 14px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .example__key-text {
-    background-color: $bg-light-gray;
-  }
-}
-
-.example__key-text::before {
-  margin-right: 10px;
-  content: "";
-}
-
-.example__key-text::after {
-  margin-left: 10px;
-  content: "";
-}
-
-.example__value {
-  font-size: 24px;
-  line-height: 24px;
-  font-family: "Oswald", sans-serif;
-  text-align: center;
-  color: $base-color-title;
-  margin: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .example__value {
-    font-size: 30px;
-    line-height: 37px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .example__value {
-    font-size: 30px;
-    line-height: 37px;
-    width: 102px;
+    background-color: #fff;
+    width: auto;
   }
 }
 
@@ -221,7 +155,9 @@
   color: $base-color-title;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
+  padding-left: 47px;
+  padding-top: 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -231,6 +167,8 @@
     text-align: right;
     padding-bottom: 45px;
     padding-right: 2px;
+    padding-left: 163px;
+    padding-top: 21px;
   }
 }
 
@@ -240,6 +178,10 @@
     text-align: left;
     display: flex;
     gap: 66px;
+    padding-top: 51px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

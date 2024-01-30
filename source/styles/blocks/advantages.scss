@@ -14,7 +14,7 @@
 @media (min-width: $desktop-width) {
   .advantages {
     width: 1224px;
-    margin-bottom: 67px;
+    margin-bottom: 20px;
     border: none;
   }
 }
@@ -25,7 +25,7 @@
   line-height: 40px;
   font-family: "Oswald", sans-serif;
   color: $base-color-title;
-  margin: 19px 0 40px 20px;
+  margin: 19px 0 39px 20px;
   text-align: left;
   width: 225px;
 }
@@ -72,7 +72,7 @@
   .advantages__list {
     margin-left: 110px;
     width: 1245px;
-    height: 280px;
+    min-height: 280px;
     padding: 0;
     counter-reset: advantages-counter;
     column-gap: 53px;

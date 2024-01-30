@@ -67,3 +67,14 @@
   }
 }
 
+.header.open .nav {
+  transform: translateX(-100%);
+  visibility: visible;
+}
+
+@media (min-width: $tablet-width) {
+  .header.open .nav {
+    transform: none;
+    visibility: visible;
+  }
+}
