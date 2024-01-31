@@ -91,6 +91,18 @@
   padding: 12px 0 12px 17px;
 }
 
+.form__input:hover {
+  border: 1px solid $bg-border-special-gray;
+}
+
+.form__input:focus {
+  border: 1px solid $base-color-text;
+}
+
+.form__input--error {
+  border: 1px solid $bg-border-error;
+}
+
 @media (min-width: $tablet-width) {
   .form__input {
     padding: 9px 0 10px 20px;
@@ -167,7 +179,7 @@
 }
 
 .form__information--contacts {
-  padding: 0 0 35px 20px;
+  padding: 0 0 33px 20px;
   width: 187px;
 }
 
@@ -201,7 +213,7 @@
 }
 
 .form__information--additionally {
-  padding: 0 0 32px 20px;
+  padding: 0 0 34px 20px;
 }
 
 @media (min-width: $tablet-width) {

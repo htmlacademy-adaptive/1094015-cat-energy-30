@@ -21,6 +21,12 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .site-list__item--form {
+    margin-left: 34px;
+  }
+}
+
 .site-list__link {
   font-weight: 400;
   font-size: 20px;
@@ -31,10 +37,22 @@
   text-decoration: none;
 }
 
+.site-list__link:hover {
+  opacity: 0.6;
+}
+
+.site-list__link:focus {
+  opacity: 0.3;
+}
+
+.site-list__link:active {
+  opacity: none;
+}
+
 @media (min-width: $tablet-width) {
   .site-list__link {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 33px;
   }
 }
 

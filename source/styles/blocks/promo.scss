@@ -1,7 +1,8 @@
 .promo {
   width: 280px;
   height: 290px;
-  background-image: image-set(
+  background-image:
+    image-set(
       url("../../images/catalog/background/gift-mobile@2x.webp") type("image/webp") 2x,
       url("../../images/catalog/background/gift-mobile@1x.webp") type("image/webp") 1x,
       url("../../images/catalog/background/gift-mobile@2x.jpg") 2x,
@@ -14,11 +15,12 @@
   .promo {
     width: 707px;
     height: 200px;
-    background-image: image-set(
-      url("../../images/catalog/background/gift-tablet@2x.webp") type("image/webp") 2x,
-      url("../../images/catalog/background/gift-tablet@1x.webp") type("image/webp") 1x,
-      url("../../images/catalog/background/gift-tablet@2x.jpg") 2x,
-      url("../../images/catalog/background/gift-tablet@1x.jpg") 1x
+    background-image:
+      image-set(
+        url("../../images/catalog/background/gift-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/catalog/background/gift-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/catalog/background/gift-tablet@2x.jpg") 2x,
+        url("../../images/catalog/background/gift-tablet@1x.jpg") 1x
     );
     margin: 73px 31px;
   }
@@ -28,11 +30,12 @@
   .promo {
     width: 245px;
     height: 288px;
-    background-image: image-set(
-      url("../../images/catalog/background/gift-desktop@2x.webp") type("image/webp") 2x,
-      url("../../images/catalog/background/gift-desktop@1x.webp") type("image/webp") 1x,
-      url("../../images/catalog/background/gift-desktop@2x.jpg") 2x,
-      url("../../images/catalog/background/gift-desktop@1x.jpg") 1x
+    background-image:
+      image-set(
+        url("../../images/catalog/background/gift-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/catalog/background/gift-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/catalog/background/gift-desktop@2x.jpg") 2x,
+        url("../../images/catalog/background/gift-desktop@1x.jpg") 1x
     );
     margin: 191px 50px 73px 50px;
   }

@@ -58,6 +58,10 @@
   align-items: center;
 }
 
+.grroup__label:disabled {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .group__label {
     gap: 20px;
@@ -75,6 +79,10 @@
   border: 1px solid $bg-border-special-gray;
   cursor: pointer;
   appearance: none;
+}
+
+.group__input--check:hover {
+  border: 1px solid $bg-radio-gray;
 }
 
 @media (min-width: $tablet-width) {

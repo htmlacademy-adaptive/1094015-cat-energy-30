@@ -183,7 +183,7 @@
 .functions__description {
   margin: 0 20px;
   border-bottom: 1px solid $bg-dark-gray;
-  padding-bottom: 21px;
+  padding-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
@@ -223,6 +223,10 @@
   padding-top: 20px;
   text-decoration: none;
   width: fit-content;
+}
+
+.functions__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
