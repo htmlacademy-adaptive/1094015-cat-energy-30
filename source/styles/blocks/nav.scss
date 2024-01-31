@@ -1,62 +1,80 @@
+.nav {
+  position: absolute;
+  right: -320px;
+  top: 0;
+  background-color: $bg-basic-white;
+  z-index: 2;
+  margin-top: 65px;
+  width: 320px;
+  list-style: none;
+  visibility: hidden;
+  transition: transform 0.5s, visibility 0.5s;
+}
+
+.nav--nojs {
+  position: static;
+  visibility: visible;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .nav {
+    position: static;
+    z-index: 0;
+    margin: 0;
+    transition: none;
+    width: 487px;
+    display: flex;
+    visibility: visible;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav {
+    background-color: transparent;
+    width: 515px;
+  }
+}
+
 .nav__list {
+  display: block;
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
+
 
 @media (min-width: $tablet-width) {
   .nav__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
     align-items: center;
     margin-left: auto;
-    width: 530px;
-  }
-}
-
-.nav__toggle {
-  padding: 0;
-  position: relative;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-@media (min-width: $tablet-width) {
-  .nav__toggle {
-    display: none;
+    width: 493px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .nav__toggle {
-    display: none;
+  .nav__list {
+    padding: 0;
   }
 }
 
-.nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 25px;
-  height: 2px;
-  background-color: $base-color-title;
-  transform: translate(-50%, -50%) rotate(45deg);
+@media (min-width: $tablet-width) {
+  .nav__list--form {
+    width: 535px;
+  }
 }
 
-.nav__toggle::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 25px;
-  height: 2px;
-  background-color: $base-color-title;
-  transform: translate(-50%, -50%) rotate(-45deg);
+.header.open .nav {
+  transform: translateX(-100%);
+  visibility: visible;
+}
+
+@media (min-width: $tablet-width) {
+  .header.open .nav {
+    transform: none;
+    visibility: visible;
+  }
 }
