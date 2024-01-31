@@ -1,0 +1,14 @@
+@media (min-width: $desktop-width) {
+  .together {
+    width: 1220px;
+    margin-left: 111px;
+    margin-right: auto;
+    margin-bottom: 14px;
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    justify-content: space-between;
+    column-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+  }
+}

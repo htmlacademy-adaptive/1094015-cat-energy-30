@@ -1,6 +1,4 @@
 .button {
-  // font-size: 16px;
-  // line-height: 20px;
   font-family: "Oswald", sans-serif;
   text-align: center;
   color: $bg-basic-white;
@@ -10,7 +8,27 @@
   text-decoration: none;
 }
 
+.button:hover {
+  background: $bg-basic-dark-green;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.button:active {
+  background: $bg-basic-dark-green;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--version {
   color: $base-color-text;
   background-color: $bg-light-gray;
+}
+
+.button--version:hover {
+  color: $base-color-text;
+  background-color: $bg-special-gray-two;
+}
+
+.button--version:active {
+  color: $base-color-text;
+  background-color: $bg-special-gray-two;
 }
