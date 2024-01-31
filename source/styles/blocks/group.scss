@@ -2,9 +2,8 @@
   display: grid;
   margin: 0;
   padding: 0;
-  height: 157px;
+  min-height: 157px;
 }
-
 
 .group:last-child {
   border: none;
@@ -109,8 +108,16 @@
   }
 }
 
+
 .group__label-text {
   font-size: 16px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .group__label-text {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }

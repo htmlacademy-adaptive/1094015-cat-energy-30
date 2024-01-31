@@ -30,7 +30,7 @@
 @media (min-width: $desktop-width) {
   .footer__container {
     width: 1220px;
-    height: 37px;
+    min-height: 37px;
     padding: 66px 110px;
     justify-content: space-between;
     align-items: center;
@@ -38,17 +38,18 @@
 }
 
 .footer__logo {
-  padding: 0 96px;
+  padding: 0 76px;
 }
 
 @media (min-width: $tablet-width) {
   .footer__logo {
     padding: 0;
+    width: 217px;
   }
 }
 
 .footer__image {
-  padding-bottom: 20px;
+  padding-bottom: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -64,8 +65,8 @@
   margin: 0;
   padding-left: 0;
   list-style: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 31px;
+  padding-bottom: 29px;
   width: 100%;
   border-top: 1px solid $bg-dark-gray;
   border-bottom: 1px solid $bg-dark-gray;

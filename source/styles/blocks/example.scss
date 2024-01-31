@@ -14,9 +14,10 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient($bg-basic-white 205px, $bg-light-gray 205px 1440px);
+    background: linear-gradient($bg-basic-white 133px, $bg-light-gray 133px);
     display: flex;
     width: 1440px;
+    padding-bottom: 45px;
   }
 }
 
@@ -30,7 +31,7 @@
 @media (min-width: $desktop-width) {
   .example__text {
     width: 436px;
-    margin: 69px 224px 75px 110px;
+    margin: 0 224px 30px 110px;
     padding: 0;
   }
 }
@@ -56,7 +57,7 @@
 
 @media (min-width: $desktop-width) {
   .example__title {
-    padding-bottom: 146px;
+    padding-bottom: 148px;
   }
 }
 
@@ -76,14 +77,24 @@
 @media (min-width: $desktop-width) {
   .example__description {
     padding-bottom: 69px;
+    width: 438px;
   }
+}
+
+.example__stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .example__stats {
     justify-content: start;
     align-items: start;
-    column-gap: 44px;
+    column-gap: 42px;
   }
 }
 
@@ -107,8 +118,6 @@
     font-size: 30px;
     line-height: 37px;
     margin-bottom: -10px;
-    padding-bottom: 20px;
-    box-sizing: border-box;
   }
 }
 
@@ -127,12 +136,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .example__key-text {
+  .example__key {
     font-size: 14px;
     line-height: 14px;
     background-color: $bg-basic-white;
     width: auto;
-    max-width: 160px;
   }
 }
 
@@ -149,7 +157,9 @@
   color: $base-color-title;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
+  padding-left: 47px;
+  padding-top: 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -183,7 +193,7 @@
 
 @media (min-width: $tablet-width) {
   .example__slider {
-    background: linear-gradient(to bottom, $bg-basic-white 151px, $bg-basic-gray 151px 384px);
+    background: linear-gradient(to bottom, $bg-basic-white 153px, $bg-basic-gray 153px 384px);
     width: 100%;
     padding-bottom: 80px;
   }

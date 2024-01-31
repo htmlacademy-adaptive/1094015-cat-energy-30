@@ -2,3 +2,16 @@
   border: none;
   padding: 27px 41px 37px 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .title {
+    padding: 0 0 54px 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    padding: 42px 0 54px 110px;
+  }
+}
+
