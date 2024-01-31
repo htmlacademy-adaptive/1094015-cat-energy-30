@@ -94,7 +94,7 @@
   .example__stats {
     justify-content: start;
     align-items: start;
-    column-gap: 42px;
+    column-gap: 44px;
   }
 }
 
@@ -109,6 +109,8 @@
   border-radius: 3px;
   font-family: "Oswald", sans-serif;
   color: $base-color-title;
+  padding-bottom: 20px;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
@@ -118,6 +120,8 @@
     font-size: 30px;
     line-height: 37px;
     margin-bottom: -10px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
   }
 }
 
@@ -141,6 +145,7 @@
     line-height: 14px;
     background-color: $bg-basic-white;
     width: auto;
+    max-width: 160px;
   }
 }
 

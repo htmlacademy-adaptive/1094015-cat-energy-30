@@ -166,3 +166,15 @@
     padding: 9px 0 10px 18px;
   }
 }
+
+.information:has(.information__input:focus)::after {
+  background-color: $bg-basic-green;
+}
+
+.information__input--error {
+  border: 1px solid $bg-border-error;
+}
+
+.information:has(.information__input--error)::after {
+  background-color: $bg-border-error;
+}

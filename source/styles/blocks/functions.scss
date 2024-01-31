@@ -234,8 +234,8 @@
     font-size: 20px;
     line-height: 29px;
     text-decoration: none;
-    padding: 0;
-    background-position: 114px center;
+    background-position: right center;
+    padding: 0 51px 0 0;
     margin-top: 0;
   }
 }
@@ -245,11 +245,5 @@
     background-position: right center;
     margin-top: -2px;
     padding-right: 51px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .functions__link--weight {
-    background-position: 111px center;
   }
 }
