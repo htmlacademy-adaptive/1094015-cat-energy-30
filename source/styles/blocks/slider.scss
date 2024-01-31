@@ -60,7 +60,7 @@
   position: absolute;
   top: 3px;
   bottom: 0;
-  left: 138px;
+  left: 140px;
   width: 4px;
   height: 256px;
   border-radius: 2px;
@@ -71,38 +71,25 @@
 @media (min-width: $tablet-width) {
   .slider__toggle::before {
     height: 512px;
-    left: 382px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .slider__toggle::before {
-    left: 277px;
+    left: 384px;
   }
 }
 
 .slider__toggle::after {
   content: "";
   position: absolute;
-  top: 111px;
-  left: 43%;
+  top: 108px;
+  left: 44%;
   width: 40px;
   height: 40px;
-  background-image: url("../../images/icons/stack.svg#thumb");
+  background-image: url("../../images/icons/thumb.svg#thumb");
   z-index: 5;
   cursor: ew-resize;
 }
 
 @media (min-width: $tablet-width) {
   .slider__toggle::after {
-    top: 238px;
-    left: 363px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .slider__toggle::after {
-    top: 239px;
-    left: 260px;
+    top: 236px;
+    left: 366px;
   }
 }

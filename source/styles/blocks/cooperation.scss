@@ -1,7 +1,5 @@
 .cooperation {
-  min-height: 474px;
-  position: relative;
-  background-color: $bg-light-gray;
+  height: 474px;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,47 +17,25 @@
   }
 }
 
-.cooperation iframe {
-  border: none;
-  display: block;
-}
-
-@media (min-width: $tablet-width) {
-  .cooperation iframe {
-    width: 768px;
-    height: 400px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .cooperation iframe {
-    width: 1440px;
-    height: 400px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .cooperation--version {
-    background-color: $bg-light-gray;
-  }
+.cooperation--version {
+  background-color: $bg-light-gray;
 }
 
 .cooperation__information {
   display: flex;
-  padding: 26px 20px;
-  gap: 17px;
+  padding: 26px 20px 26px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .cooperation__information {
-    padding: 62px 54px 57px 70px;
-    column-gap: 307px;
+    padding: 60px 70px;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: $desktop-width) {
   .cooperation__information {
-    padding: 60px 75px 57px 80px;
+    padding: 60px 78px 60px 80px;
     position: absolute;
     z-index: 1;
     background-color: $bg-basic-white;
@@ -96,14 +72,6 @@
   .cooperation__address {
     font-size: 16px;
     width: 157px;
-    text-align: right;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .cooperation__address {
-    width: 161px;
-    text-align: left;
   }
 }
 
