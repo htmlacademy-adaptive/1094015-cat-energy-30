@@ -1,8 +1,7 @@
 .site-list__item {
+  border-top: 1px solid #e6e6e6;
   text-align: center;
-  padding-top: 22px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid $bg-line-gray;
+  padding: 22px 0 24px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -10,14 +9,8 @@
     font-size: 18px;
     line-height: 24px;
     padding: 0;
-    border: none;
-    margin-left: 32px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-list__item {
-    margin-left: 35px;
+    border-top: none;
+    margin-left: 33px;
   }
 }
 
@@ -41,32 +34,7 @@
 @media (min-width: $desktop-width) {
   .site-list__link {
     font-size: 20px;
-    line-height: 33px;
-    color: $additional-color-title;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-list__link--catalog {
+    line-height: 29px;
     color: $bg-basic-white;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .site-list__link--current {
-    padding-bottom: 6px;
-    border-bottom: 3px solid $bg-basic-green;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-list__link--current {
-    padding-bottom: 7px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-list__link--current-catalog {
-    border-bottom: 2px solid $bg-basic-white;
   }
 }
