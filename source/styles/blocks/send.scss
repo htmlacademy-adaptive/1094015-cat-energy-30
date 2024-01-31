@@ -1,22 +1,5 @@
 .send__button {
   padding: 10px 78px;
   border: none;
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .send__button {
-    font-size: 20px;
-    line-height: 26px;
-    padding: 14px 66px;
-    margin-bottom: 61px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .send__button {
-    width: 570px;
-  }
+  margin-bottom: 21px;
 }
