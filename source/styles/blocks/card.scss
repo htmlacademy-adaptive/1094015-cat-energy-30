@@ -1,5 +1,6 @@
 .card__container {
   display: flex;
+  flex-wrap: wrap;
   min-height: 107px;
   padding-bottom: 22px;
 }
@@ -9,12 +10,6 @@
     display: block;
     min-height: 175px;
     padding-bottom: 26px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .card__container {
-    padding-bottom: 35px;
   }
 }
 
@@ -35,6 +30,7 @@
 
 .card__link {
   text-decoration: none;
+  display: block;
 }
 
 .card__image {
@@ -52,7 +48,7 @@
 
 @media (min-width: $desktop-width) {
   .card__image {
-    padding: 0 0 9px 22px;
+    padding: 0 0 8px 22px;
   }
 }
 
@@ -179,6 +175,9 @@
 @media (min-width: $desktop-width) {
   .card__button {
     margin-left: 40px;
-    padding: 9px 54px 7px 54px;
+    display: block;
+    width: 169px;
+    padding: 10px 10px;
+    box-sizing: border-box;
   }
 }

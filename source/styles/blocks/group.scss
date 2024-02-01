@@ -22,6 +22,7 @@
 @media (min-width: $desktop-width) {
   .group {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 0 58px 0;
     width: 1125px;
     min-height: 40px;

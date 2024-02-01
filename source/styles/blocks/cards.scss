@@ -26,30 +26,22 @@
 }
 
 .cards__item {
-  padding: 22px 20px 24px 20px;
+  padding: 21px 20px 25px 20px;
   list-style: none;
   min-height: 162px;
   border-bottom: 1px solid $bg-dark-gray;
 }
 
-.cards__item:first-child {
-  padding: 21px 20px 25px 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .cards__item:first-child {
-    padding: 0;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .cards__item {
     padding: 0;
     border: none;
-    height: 502px;
+    min-height: 462px;
     border-bottom: 0;
     background: linear-gradient(to bottom, $bg-basic-white 73px, $bg-light-gray 73px 511px);
     width: 324px;
+    padding-bottom: 40px;
   }
 }
 
@@ -57,10 +49,11 @@
   .cards__item {
     padding: 0;
     border: none;
-    height: 503px;
+    min-height: 462px;
     border-bottom: 0;
     background: linear-gradient(to bottom, $bg-basic-white 73px, $bg-light-gray 73px 511px);
     width: 245px;
+    padding-bottom: 40px;
   }
 }
 
