@@ -53,30 +53,35 @@
 
 .slider__toggle {
   border: 0;
-}
-
-.slider__toggle::before {
-  content: "";
   position: absolute;
-  top: 3px;
+  top: 1px;
   bottom: 0;
   left: 138px;
   width: 4px;
   height: 256px;
   border-radius: 2px;
-  background-color: $bg-special-gray;
+  background-color: $bg-border-dark-gray;
   z-index: 4;
+  padding: 0;
+}
+
+.slider__toggle:hover {
+  background-color: $bg-basic-green;
+}
+
+.slider__toggle:active {
+  background-color: rgba(94, 170, 47, 0.6);
 }
 
 @media (min-width: $tablet-width) {
-  .slider__toggle::before {
+  .slider__toggle {
     height: 512px;
     left: 382px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .slider__toggle::before {
+  .slider__toggle {
     left: 277px;
   }
 }
@@ -84,25 +89,71 @@
 .slider__toggle::after {
   content: "";
   position: absolute;
-  top: 111px;
-  left: 43%;
-  width: 40px;
-  height: 40px;
-  background-image: url("../../images/icons/stack.svg#thumb");
+  width: 24px;
+  height: 18px;
+  background-color: $bg-border-dark-gray;
+  mask-image: url("../../images/icons/stack.svg#thumb");
   z-index: 5;
-  cursor: ew-resize;
+  top: 119px;
+  left: -10px;
+}
+
+.slider__toggle:hover::after {
+  background-color: $bg-basic-green;
+}
+
+.slider__toggle:active::after {
+  background-color: rgba(94, 170, 47, 0.6);
 }
 
 @media (min-width: $tablet-width) {
   .slider__toggle::after {
-    top: 238px;
-    left: 363px;
+    top: 248px;
+    left: -10px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__toggle::after {
+    top: 249px;
+    left: -9px;
+  }
+}
+
+.slider__toggle::before {
+  content: "";
+  position: absolute;
+  top: 108px;
+  left: -17px;
+  width: 36px;
+  height: 36px;
+  background-color: $bg-basic-white;
+  border-radius: 50%;
+  border: 2px solid $bg-border-dark-gray;
+  z-index: 5;
+  cursor: ew-resize;
+}
+
+.slider__toggle:hover::before {
+  border: 2px solid $bg-basic-green;
+  background-color: $bg-basic-white;
+}
+
+.slider__toggle:active::before {
+  border: 2px solid rgba(94, 170, 47, 0.6);
+  background-color: $bg-basic-white;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggle::before {
+    top: 236px;
+    left: -17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__toggle::before {
     top: 239px;
-    left: 260px;
+    left: -17px;
   }
 }

@@ -1,20 +1,36 @@
 .example {
   background-color: $bg-light-gray;
-  padding: 25px 20px 20px 20px;
+  padding: 25px 20px 37px 20px;
   min-width: 280px;
 }
 
 @media (min-width: $tablet-width) {
   .example {
-    width: 768px;
+    width: auto;
     background-color: $bg-basic-white;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    background: linear-gradient($bg-basic-white 133px, $bg-light-gray 133px);
+    width: auto;
+    background: linear-gradient($bg-basic-white 140px, $bg-light-gray 140px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__container {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__container {
     display: flex;
     width: 1440px;
     padding-bottom: 45px;
@@ -94,7 +110,7 @@
   .example__stats {
     justify-content: start;
     align-items: start;
-    column-gap: 42px;
+    column-gap: 44px;
   }
 }
 
@@ -118,6 +134,8 @@
     font-size: 30px;
     line-height: 37px;
     margin-bottom: -10px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
   }
 }
 
@@ -140,13 +158,18 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $bg-basic-white;
-    width: auto;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 126px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example__key {
     background-color: $bg-light-gray;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 126px;
   }
 }
 
@@ -195,7 +218,7 @@
   .example__slider {
     background: linear-gradient(to bottom, $bg-basic-white 153px, $bg-basic-gray 153px 384px);
     width: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 97px;
   }
 }
 

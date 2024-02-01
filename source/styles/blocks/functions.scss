@@ -1,6 +1,7 @@
 @media (min-width: $desktop-width) {
   .functions {
     display: flex;
+    flex-wrap: wrap;
     padding: 0 110px 36px 110px;
     width: 1220px;
     min-height: 374px;
@@ -11,7 +12,7 @@
 .functions__block {
   background-color: $bg-light-gray;
   position: relative;
-  margin: 0 20px 0 20px;
+  margin: 0 20px 20px 20px;
   width: 280px;
   min-height: 267px;
 }
@@ -102,7 +103,6 @@
 }
 
 .functions__block--slim {
-  margin-bottom: 20px;
   background-color: $bg-light-gray;
 }
 
@@ -225,8 +225,13 @@
   width: fit-content;
 }
 
+.functions__link:hover {
+  background-size: 32px 12px;
+}
+
 .functions__link:active {
   opacity: 0.3;
+  background-size: 32px 12px;
 }
 
 @media (min-width: $tablet-width) {
@@ -248,4 +253,3 @@
     padding-right: 51px;
   }
 }
-

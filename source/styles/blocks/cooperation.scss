@@ -1,6 +1,10 @@
 .cooperation {
   min-height: 474px;
   position: relative;
+  background-color: $bg-basic-white;
+}
+
+.cooperation--version {
   background-color: $bg-light-gray;
 }
 
@@ -8,6 +12,7 @@
   .cooperation {
     min-height: 600px;
     min-width: 768px;
+    background-color: $bg-light-gray;
   }
 }
 
@@ -22,18 +27,17 @@
 .cooperation iframe {
   border: none;
   display: block;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .cooperation iframe {
-    width: 768px;
     height: 400px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .cooperation iframe {
-    width: 1440px;
     height: 400px;
   }
 }
@@ -54,6 +58,7 @@
   .cooperation__information {
     padding: 62px 54px 57px 70px;
     column-gap: 307px;
+    background-color: $bg-basic-white;
   }
 }
 

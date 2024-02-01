@@ -174,6 +174,7 @@
 .information__input--error {
   border: 1px solid $bg-border-error;
 }
+
 .information:has(.information__input--error)::after {
   background-color: $bg-border-error;
 }
